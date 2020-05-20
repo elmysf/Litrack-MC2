@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB40C2ED2475546B00CE2D9E /* Camera.Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB40C2EC2475546B00CE2D9E /* Camera.Screen.storyboard */; };
+		CB40C2EF2475548200CE2D9E /* Chart.Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB40C2EE2475548200CE2D9E /* Chart.Screen.storyboard */; };
 		CBE7A09124744FD300868A22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7A09024744FD300868A22 /* AppDelegate.swift */; };
 		CBE7A09324744FD300868A22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7A09224744FD300868A22 /* SceneDelegate.swift */; };
 		CBE7A09524744FD300868A22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7A09424744FD300868A22 /* ViewController.swift */; };
@@ -47,6 +49,8 @@
 		63BAAD205670E2DB73033AA1 /* Pods_Litrack_MC2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Litrack_MC2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79ADACCEB8A1764428091392 /* Pods_Litrack_MC2_Litrack_MC2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Litrack_MC2_Litrack_MC2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30C443B49991530735A64DC /* Pods-Litrack-MC2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Litrack-MC2.release.xcconfig"; path = "Target Support Files/Pods-Litrack-MC2/Pods-Litrack-MC2.release.xcconfig"; sourceTree = "<group>"; };
+		CB40C2EC2475546B00CE2D9E /* Camera.Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.Screen.storyboard; sourceTree = "<group>"; };
+		CB40C2EE2475548200CE2D9E /* Chart.Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chart.Screen.storyboard; sourceTree = "<group>"; };
 		CBE7A08D24744FD300868A22 /* Litrack-MC2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Litrack-MC2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE7A09024744FD300868A22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBE7A09224744FD300868A22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -113,7 +117,6 @@
 				4F17B7754A1405DC271E9EB7 /* Pods-Litrack-MC2Tests.debug.xcconfig */,
 				22EAA742B16D84A339E26948 /* Pods-Litrack-MC2Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -146,6 +149,8 @@
 				CBE7A09224744FD300868A22 /* SceneDelegate.swift */,
 				CBE7A09424744FD300868A22 /* ViewController.swift */,
 				CBE7A09624744FD300868A22 /* Main.storyboard */,
+				CB40C2EC2475546B00CE2D9E /* Camera.Screen.storyboard */,
+				CB40C2EE2475548200CE2D9E /* Chart.Screen.storyboard */,
 				CBE7A09C24744FD500868A22 /* Assets.xcassets */,
 				CBE7A09E24744FD500868A22 /* LaunchScreen.storyboard */,
 				CBE7A0A124744FD500868A22 /* Info.plist */,
@@ -282,7 +287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBE7A0A024744FD500868A22 /* LaunchScreen.storyboard in Resources */,
+				CB40C2ED2475546B00CE2D9E /* Camera.Screen.storyboard in Resources */,
 				CBE7A09D24744FD500868A22 /* Assets.xcassets in Resources */,
+				CB40C2EF2475548200CE2D9E /* Chart.Screen.storyboard in Resources */,
 				CBE7A09824744FD300868A22 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

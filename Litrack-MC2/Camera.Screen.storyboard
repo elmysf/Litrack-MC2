@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4kQ-qW-hRb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="kLk-QH-LQa">
+            <objects>
+                <viewController id="4kQ-qW-hRb" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1SI-CG-ae9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSL-XZ-vEx">
+                                <rect key="frame" x="80" y="744" width="254" height="60"/>
+                                <color key="backgroundColor" red="0.23137254900000001" green="0.4941176471" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Hek-we-BP4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <state key="normal" title="Got it">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ScJ-7I-oGV" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="omB-9B-RoQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Rr3-Dj-aDF" firstAttribute="trailing" secondItem="OSL-XZ-vEx" secondAttribute="trailing" constant="80" id="G1D-MX-t2O"/>
+                            <constraint firstItem="OSL-XZ-vEx" firstAttribute="leading" secondItem="Rr3-Dj-aDF" secondAttribute="leading" constant="80" id="KRg-5X-TMJ"/>
+                            <constraint firstItem="OSL-XZ-vEx" firstAttribute="top" secondItem="Rr3-Dj-aDF" secondAttribute="top" constant="700" id="V2A-9b-EpA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rr3-Dj-aDF"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ecx-3U-unf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117" y="0.0"/>
+        </scene>
+        <!--Chart.Screen-->
+        <scene sceneID="v6H-15-dpQ">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chart.Screen" id="ScJ-7I-oGV" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dLT-kb-m2g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="731" y="108"/>
+        </scene>
+    </scenes>
+</document>
