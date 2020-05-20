@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import CoreML
+import CoreData
 
 class ViewController: UIViewController {
 
