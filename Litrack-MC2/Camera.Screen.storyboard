@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4kQ-qW-hRb">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -15,26 +15,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSL-XZ-vEx">
-                                <rect key="frame" x="80" y="744" width="254" height="60"/>
-                                <color key="backgroundColor" red="0.23137254900000001" green="0.4941176471" blue="0.45098039220000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIX-It-ehC">
+                                <rect key="frame" x="40" y="752" width="334" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="Hek-we-BP4"/>
+                                    <constraint firstAttribute="height" constant="80" id="vPz-ze-siP"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                                <state key="normal" title="Got it">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="ScJ-7I-oGV" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="omB-9B-RoQ"/>
+                                    <segue destination="ScJ-7I-oGV" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="Ie1-dH-5Zv"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Rr3-Dj-aDF" firstAttribute="trailing" secondItem="OSL-XZ-vEx" secondAttribute="trailing" constant="80" id="G1D-MX-t2O"/>
-                            <constraint firstItem="OSL-XZ-vEx" firstAttribute="leading" secondItem="Rr3-Dj-aDF" secondAttribute="leading" constant="80" id="KRg-5X-TMJ"/>
-                            <constraint firstItem="OSL-XZ-vEx" firstAttribute="top" secondItem="Rr3-Dj-aDF" secondAttribute="top" constant="700" id="V2A-9b-EpA"/>
+                            <constraint firstItem="UIX-It-ehC" firstAttribute="leading" secondItem="Rr3-Dj-aDF" secondAttribute="leading" constant="40" id="JMr-EN-yqH"/>
+                            <constraint firstItem="Rr3-Dj-aDF" firstAttribute="bottom" secondItem="UIX-It-ehC" secondAttribute="bottom" constant="30" id="Px7-4l-zfg"/>
+                            <constraint firstItem="Rr3-Dj-aDF" firstAttribute="trailing" secondItem="UIX-It-ehC" secondAttribute="trailing" constant="40" id="eVA-xT-xxe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Rr3-Dj-aDF"/>
                     </view>
@@ -46,7 +42,9 @@
         <!--Chart.Screen-->
         <scene sceneID="v6H-15-dpQ">
             <objects>
-                <viewControllerPlaceholder storyboardName="Chart.Screen" id="ScJ-7I-oGV" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Chart.Screen" id="ScJ-7I-oGV" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Jlo-LO-rft"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dLT-kb-m2g" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="731" y="108"/>
