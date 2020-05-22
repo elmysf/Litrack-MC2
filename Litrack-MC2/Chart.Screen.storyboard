@@ -80,7 +80,8 @@
         <!--Manage View Controller-->
         <scene sceneID="q51-Di-6pM">
             <objects>
-                <viewController storyboardIdentifier="manageViewWontroller" id="0JM-3c-Yha" customClass="ManageViewController" customModule="Litrack_MC2" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y8O-RV-iK6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="ManageViewController" id="0JM-3c-Yha" customClass="ManageViewController" customModule="Litrack_MC2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4bX-o7-ncd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,7 +96,7 @@
                                 <rect key="frame" x="0.0" y="178" width="414" height="684"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bF7-va-iie">
-                                        <rect key="frame" x="20" y="60" width="374" height="564"/>
+                                        <rect key="frame" x="20" y="80" width="374" height="524"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -108,7 +109,7 @@
                                     <constraint firstAttribute="bottom" secondItem="bF7-va-iie" secondAttribute="bottom" constant="20" id="iGp-Zt-0dc"/>
                                     <constraint firstAttribute="trailing" secondItem="bF7-va-iie" secondAttribute="trailing" constant="20" id="o6u-3v-9NB"/>
                                     <constraint firstItem="bF7-va-iie" firstAttribute="leading" secondItem="qKd-S6-sCB" secondAttribute="leading" constant="20" id="tKQ-ex-T1g"/>
-                                    <constraint firstItem="bF7-va-iie" firstAttribute="top" secondItem="qKd-S6-sCB" secondAttribute="top" constant="60" id="zet-V4-UDt"/>
+                                    <constraint firstItem="bF7-va-iie" firstAttribute="top" secondItem="qKd-S6-sCB" secondAttribute="top" constant="80" id="zet-V4-UDt"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="aGA-IY-1f5"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="qKd-S6-sCB"/>
@@ -132,7 +133,6 @@
                         <outlet property="illustrationImage" destination="QrS-Pg-ivL" id="xRa-xZ-pjn"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Y8O-RV-iK6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1259" y="-1966"/>
         </scene>
