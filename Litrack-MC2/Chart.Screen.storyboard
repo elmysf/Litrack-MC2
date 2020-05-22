@@ -38,20 +38,28 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lOe-IS-Xwm">
+                                <rect key="frame" x="30" y="118" width="354" height="458"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="roK-FF-WR9" firstAttribute="top" secondItem="Ste-eS-2hi" secondAttribute="top" id="1q6-Rl-2pF"/>
                             <constraint firstItem="iLI-AU-gIY" firstAttribute="top" secondItem="roK-FF-WR9" secondAttribute="bottom" constant="80" id="771-5n-xF7"/>
                             <constraint firstAttribute="trailing" secondItem="YJw-U9-KZO" secondAttribute="trailing" constant="20" id="89Y-o5-HYO"/>
+                            <constraint firstItem="lOe-IS-Xwm" firstAttribute="leading" secondItem="GpK-iK-Uaz" secondAttribute="leading" constant="30" id="Bxf-k9-Kx2"/>
                             <constraint firstItem="YJw-U9-KZO" firstAttribute="leading" secondItem="Ste-eS-2hi" secondAttribute="leading" constant="20" id="GBB-Y2-Pqa"/>
                             <constraint firstAttribute="trailing" secondItem="roK-FF-WR9" secondAttribute="trailing" id="Ldt-39-dqt"/>
                             <constraint firstItem="YJw-U9-KZO" firstAttribute="top" secondItem="roK-FF-WR9" secondAttribute="bottom" constant="20" id="MGp-hV-Mfn"/>
                             <constraint firstAttribute="bottom" secondItem="roK-FF-WR9" secondAttribute="bottom" constant="300" id="Skb-Hd-idp"/>
+                            <constraint firstItem="YJw-U9-KZO" firstAttribute="top" secondItem="lOe-IS-Xwm" secondAttribute="bottom" constant="40" id="ViF-XL-fPx"/>
+                            <constraint firstItem="GpK-iK-Uaz" firstAttribute="trailing" secondItem="lOe-IS-Xwm" secondAttribute="trailing" constant="30" id="YeL-AU-jJK"/>
                             <constraint firstAttribute="bottom" secondItem="iLI-AU-gIY" secondAttribute="bottom" constant="50" id="pQS-H2-KAa"/>
                             <constraint firstAttribute="trailing" secondItem="iLI-AU-gIY" secondAttribute="trailing" constant="30" id="rKX-wu-I1l"/>
                             <constraint firstItem="iLI-AU-gIY" firstAttribute="leading" secondItem="Ste-eS-2hi" secondAttribute="leading" constant="30" id="wFf-Oe-pqo"/>
                             <constraint firstItem="roK-FF-WR9" firstAttribute="leading" secondItem="Ste-eS-2hi" secondAttribute="leading" id="x7Q-mY-kJ0"/>
+                            <constraint firstItem="lOe-IS-Xwm" firstAttribute="top" secondItem="GpK-iK-Uaz" secondAttribute="top" constant="30" id="ybN-Sg-YfG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GpK-iK-Uaz"/>
                     </view>
@@ -59,6 +67,7 @@
                     <connections>
                         <outlet property="backgroundImage" destination="roK-FF-WR9" id="3yg-LB-Cya"/>
                         <outlet property="manageWasteTitle" destination="YJw-U9-KZO" id="e71-mo-WIu"/>
+                        <outlet property="pieChartView" destination="lOe-IS-Xwm" id="b67-8n-vFY"/>
                         <outlet property="recycleSV" destination="1bv-xs-tK8" id="uQY-Cx-BZm"/>
                         <outlet property="reduceSV" destination="aEH-VH-9j1" id="01z-ko-Iio"/>
                         <outlet property="reuseSV" destination="1oW-4y-qYu" id="Yg1-PL-yxp"/>

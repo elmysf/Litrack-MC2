@@ -17,7 +17,7 @@ class ChartViewController: UIViewController {
     @IBOutlet weak var reduceSV: UIStackView!
     @IBOutlet weak var reuseSV: UIStackView!
     @IBOutlet weak var recycleSV: UIStackView!
-    
+    @IBOutlet weak var pieChartView: PieChartView!
     
     var manageInformation = [
         (UIImage(named: "illustrationRecycle"), "Ipsum"),
@@ -57,6 +57,9 @@ class ChartViewController: UIViewController {
     private func setBackgroundImage(){
         self.backgroundImage.image = UIImage(named: "ChartBg")
     }
+    
+    // set pieChartView
+    
         
     // set manage Waste Title
     private func title(){
@@ -73,6 +76,7 @@ class ChartViewController: UIViewController {
         reduceSV.alignment = .fill
         reduceSV.distribution = .fillEqually
         reduceSV.spacing = 0
+        reduceSV.isUserInteractionEnabled = true
         
         let image1 = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         image1.image = UIImage(named: "REDUCE")
@@ -91,6 +95,7 @@ class ChartViewController: UIViewController {
         reuseSV.alignment = .fill
         reuseSV.distribution = .fillEqually
         reuseSV.spacing = 0
+        reuseSV.isUserInteractionEnabled = true
         
         let image2 = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         image2.image = UIImage(named: "REUSE")
@@ -109,6 +114,7 @@ class ChartViewController: UIViewController {
         recycleSV.alignment = .fill
         recycleSV.distribution = .fillEqually
         recycleSV.spacing = 0
+        recycleSV.isUserInteractionEnabled = true
         
         let image3 = UIImageView(frame: CGRect(x: 0, y: 0, width: 20, height: 20))
         image3.image = UIImage(named: "RECYCLE")
@@ -125,7 +131,7 @@ class ChartViewController: UIViewController {
     }
     
      // add Tap Gesture Stack View
-    func addTapped(parameter: inout UIStackView){
+    func addTapped( parameter: inout UIStackView){
         parameter.isUserInteractionEnabled = true
         parameter.addGestureRecognizer(UIGestureRecognizer(target: self, action: #selector(self.objectTapped)))
     }
@@ -145,7 +151,6 @@ class ChartViewController: UIViewController {
         }
 
         self.navigationController?.pushViewController(controller, animated: true)
-            }
-
     
     }
+}
