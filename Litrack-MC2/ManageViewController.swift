@@ -33,5 +33,6 @@ class ManageViewController: UIViewController {
         self.navigationController?.navigationBar.tintColor = .white
 
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
     }
 }

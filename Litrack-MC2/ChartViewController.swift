@@ -134,8 +134,8 @@ class ChartViewController: UIViewController {
 
     @objc func objectTapped(gesture: UIGestureRecognizer){
         let controller = UIStoryboard(name: "Chart.Screen", bundle: nil).instantiateViewController(withIdentifier: "ManageViewController") as! ManageViewController
-        controller.modalPresentationStyle = .automatic
-        controller.modalTransitionStyle = .coverVertical
+//        controller.modalPresentationStyle = .automatic
+//        controller.modalTransitionStyle = .coverVertical
 
         switch gesture.view as? UIStackView {
         case (reduceSV):
@@ -148,9 +148,12 @@ class ChartViewController: UIViewController {
             controller.detail = manageInformation[3]
         }
 //
-        self.present(controller, animated: true, completion: nil)
+//        self.present(controller, animated: true, completion: nil)
 
-//        self.navigationController?.pushViewController(controller, animated: true)
+        self.navigationController?.modalTransitionStyle = .coverVertical
+        self.navigationController?.modalPresentationStyle = .automatic
+        self.navigationController?.pushViewController(controller, animated: true)
+        
 //
     }
 }
