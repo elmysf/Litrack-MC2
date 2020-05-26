@@ -20,9 +20,9 @@ class ChartViewController: UIViewController {
     @IBOutlet weak var pieChartView: PieChartView!
     
     var manageInformation = [
-        (UIImage(named: "illustrationRecycle"), "Reducing is simply creating less waste and also the best method for keeping our earth clean because it stops the problem at the source.\n\nTo reduce your waste, determine your true needs and avoid impulse buys.\n\nHere’s what you can do to start reducing your waste:\n\nFor plastic:\n•    Replace plastic bottle with tumbler.\n•    Don’t use plastic straws or utensils, bring reusable ones instead.\n•    Use a personal shopping bag instead of plastic bags.\n•    Change your food storage. Instead of using plastic, use compartment storage in your kitchen.\n\nFor cans:\n•     Replace canned fruits and vegetables by finding it in the freezer section of your grocery store.\n•     Start and cook from scratch. By buying the ingredient instead of buying the canned foods and cooking them at home, it not only saves money but they taste so much better than canned foods\n•     Start growing or visit your local farm to get your freshly harvested ingredients\n\nFor glass, try to cook from scratch. For example, instead of buying syrup in a glass bottle, we can try to make our own natural homemade syrup that are healthier and taste  just as delicious. If it’s hard for you, try to reuse or recycle more."),
-        (UIImage(named: "illustrationRecycle"), "Reusing is taking old items that you might consider throwing away and finding a new use for them, thereby reducing the consumption of new resources. Reusing helps in situations where it isn't possible to reduce.\n\nHere ways to practice reuse in your daily life:\n\nFor plastic, you can reuse small plastic bottles as a snack storage, salt-sugar or spices storage. You can also reuse big bottles as a watering can, piggy bank, trash can, DIY Sprinkleror even a snack bowl.\n\nFor cans, try reusing soda cans as a lantern, candle holder, planter, cutlery or utensils storage. You can also use tin cans as a drawer organizer, or paint can cubbies.\n\nYou can reuse glass bottles and jars as a vase or as storage for food, spices (sugar, salt, etc.), and tools."),
-        (UIImage(named: "illustrationRecycle"), "Recycling is changing old products into new ones so they can be resold. Items that might otherwise be considered trash turned into a useful new product.\n\nSome tips for recycling:\n•     Buy products that can be recycled such as glass jars. Avoid buying hazardous materials that could pose difficulty for you to recycle.\n•     Buy products that have been made from recycled material. These products are no different from standard goods; they’re just helping to make the most of valuable resources.\n\nHere are some ideas you can do to recycle your wastes:\n\nFor plastic bottles you can turn it into supply cups, planter, piggy bank, pencil/marker organiser, or even a vertical garden.\n\nYou can turn soda or tin cans into a decorative flower vase, utensils and cutlery holders.\n\nYou can also recycle glass bottles and jars into home decorations or homemade hanging storage for your kitchen."),
+        (UIImage(named: "illustrationRecycle"), "\n\nReducing is simply creating less waste and also the best method for keeping our earth clean because it stops the problem at the source.\n\nTo reduce your waste, determine your true needs and avoid impulse buys.\n\nHere’s what you can do to start reducing your waste:\n\nFor plastic:\n•    Replace plastic bottle with tumbler.\n•    Don’t use plastic straws or utensils, bring reusable ones instead.\n•    Use a personal shopping bag instead of plastic bags.\n•    Change your food storage. Instead of using plastic, use compartment storage in your kitchen.\n\nFor cans:\n•     Replace canned fruits and vegetables by finding it in the freezer section of your grocery store.\n•     Start and cook from scratch. By buying the ingredient instead of buying the canned foods and cooking them at home, it not only saves money but they taste so much better than canned foods\n•     Start growing or visit your local farm to get your freshly harvested ingredients\n\nFor glass, try to cook from scratch. For example, instead of buying syrup in a glass bottle, we can try to make our own natural homemade syrup that are healthier and taste  just as delicious. If it’s hard for you, try to reuse or recycle more."),
+        (UIImage(named: "illustrationRecycle"), "\n\nReusing is taking old items that you might consider throwing away and finding a new use for them, thereby reducing the consumption of new resources. Reusing helps in situations where it isn't possible to reduce.\n\nHere ways to practice reuse in your daily life:\n\nFor plastic, you can reuse small plastic bottles as a snack storage, salt-sugar or spices storage. You can also reuse big bottles as a watering can, piggy bank, trash can, DIY Sprinkleror even a snack bowl.\n\nFor cans, try reusing soda cans as a lantern, candle holder, planter, cutlery or utensils storage. You can also use tin cans as a drawer organizer, or paint can cubbies.\n\nYou can reuse glass bottles and jars as a vase or as storage for food, spices (sugar, salt, etc.), and tools."),
+        (UIImage(named: "illustrationRecycle"), "\n\nRecycling is changing old products into new ones so they can be resold. Items that might otherwise be considered trash turned into a useful new product.\n\nSome tips for recycling:\n•     Buy products that can be recycled such as glass jars. Avoid buying hazardous materials that could pose difficulty for you to recycle.\n•     Buy products that have been made from recycled material. These products are no different from standard goods; they’re just helping to make the most of valuable resources.\n\nHere are some ideas you can do to recycle your wastes:\n\nFor plastic bottles you can turn it into supply cups, planter, piggy bank, pencil/marker organiser, or even a vertical garden.\n\nYou can turn soda or tin cans into a decorative flower vase, utensils and cutlery holders.\n\nYou can also recycle glass bottles and jars into home decorations or homemade hanging storage for your kitchen."),
         (UIImage(named: "illustrationRecycle"), "ipsum")
     ]
     
@@ -139,21 +139,20 @@ class ChartViewController: UIViewController {
 
         switch gesture.view as? UIStackView {
         case (reduceSV):
+            controller.title = "Reduce Waste"
             controller.detail = manageInformation[0]
         case (reuseSV):
+            controller.title = "Reuse Waste"
             controller.detail = manageInformation[1]
         case (recycleSV):
+            controller.title = "Recycle Waste"
             controller.detail = manageInformation[2]
         default:
             controller.detail = manageInformation[3]
         }
-//
+
 //        self.present(controller, animated: true, completion: nil)
 
-        self.navigationController?.modalTransitionStyle = .coverVertical
-        self.navigationController?.modalPresentationStyle = .automatic
         self.navigationController?.pushViewController(controller, animated: true)
-        
-//
     }
 }

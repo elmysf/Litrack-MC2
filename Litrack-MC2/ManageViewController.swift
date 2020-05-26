@@ -22,6 +22,7 @@ class ManageViewController: UIViewController {
 
         illustrationImage.image = detail.illustration
         descriptionText.text = detail.desc
+        
     }
     
     private func setupNavigationBar(){
@@ -31,8 +32,10 @@ class ManageViewController: UIViewController {
         self.navigationController?.navigationBar.barStyle = .black
         self.navigationController?.navigationBar.isTranslucent =  false
         self.navigationController?.navigationBar.tintColor = .white
-
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Manage Waste", style: .plain, target: nil, action: nil)
+        
+        
+        
         
     }
 }
