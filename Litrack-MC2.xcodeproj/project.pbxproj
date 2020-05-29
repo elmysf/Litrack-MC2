@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		CB40C2ED2475546B00CE2D9E /* Camera.Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB40C2EC2475546B00CE2D9E /* Camera.Screen.storyboard */; };
 		CB40C2EF2475548200CE2D9E /* Chart.Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB40C2EE2475548200CE2D9E /* Chart.Screen.storyboard */; };
+		CB44DE0F247702E900F4B5C7 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44DE0E247702E900F4B5C7 /* ChartViewController.swift */; };
+		CB44DE1124778D3400F4B5C7 /* ManageInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44DE1024778D3400F4B5C7 /* ManageInfoViewController.swift */; };
 		CBE7A09124744FD300868A22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7A09024744FD300868A22 /* AppDelegate.swift */; };
 		CBE7A09324744FD300868A22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7A09224744FD300868A22 /* SceneDelegate.swift */; };
 		CBE7A09524744FD300868A22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7A09424744FD300868A22 /* ViewController.swift */; };
@@ -51,6 +53,8 @@
 		B30C443B49991530735A64DC /* Pods-Litrack-MC2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Litrack-MC2.release.xcconfig"; path = "Target Support Files/Pods-Litrack-MC2/Pods-Litrack-MC2.release.xcconfig"; sourceTree = "<group>"; };
 		CB40C2EC2475546B00CE2D9E /* Camera.Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.Screen.storyboard; sourceTree = "<group>"; };
 		CB40C2EE2475548200CE2D9E /* Chart.Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chart.Screen.storyboard; sourceTree = "<group>"; };
+		CB44DE0E247702E900F4B5C7 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
+		CB44DE1024778D3400F4B5C7 /* ManageInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageInfoViewController.swift; sourceTree = "<group>"; };
 		CBE7A08D24744FD300868A22 /* Litrack-MC2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Litrack-MC2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE7A09024744FD300868A22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBE7A09224744FD300868A22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -151,6 +155,8 @@
 				CBE7A09624744FD300868A22 /* Main.storyboard */,
 				CB40C2EC2475546B00CE2D9E /* Camera.Screen.storyboard */,
 				CB40C2EE2475548200CE2D9E /* Chart.Screen.storyboard */,
+				CB44DE1024778D3400F4B5C7 /* ManageInfoViewController.swift */,
+				CB44DE0E247702E900F4B5C7 /* ChartViewController.swift */,
 				CBE7A09C24744FD500868A22 /* Assets.xcassets */,
 				CBE7A09E24744FD500868A22 /* LaunchScreen.storyboard */,
 				CBE7A0A124744FD500868A22 /* Info.plist */,
@@ -422,6 +428,8 @@
 				CBE7A09124744FD300868A22 /* AppDelegate.swift in Sources */,
 				CBE7A09324744FD300868A22 /* SceneDelegate.swift in Sources */,
 				CBE7A09B24744FD300868A22 /* Litrack_MC2.xcdatamodeld in Sources */,
+				CB44DE0F247702E900F4B5C7 /* ChartViewController.swift in Sources */,
+				CB44DE1124778D3400F4B5C7 /* ManageInfoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
