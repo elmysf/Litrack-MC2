@@ -19,7 +19,7 @@ class ChartViewController: UIViewController {
     @IBOutlet weak var recycleSV: UIStackView!
     @IBOutlet weak var pieChartView: PieChartView!
     
-    // Manage Waste Information in Manage View Controller
+    // Manage Waste Information in ManageViewController
     var manageInformation = [
         (UIImage(named: "illustrationReduce"), "\nReducing is simply creating less waste and also the best method for keeping our earth clean because it stops the problem at the source.\n\nTo reduce your waste, determine your true needs and avoid impulse buys.\n\nHere’s what you can do to start reducing your waste:\n\nFor plastic:\n•    Replace plastic bottle with tumbler.\n•    Don’t use plastic straws or utensils, bring reusable ones instead.\n•    Use a personal shopping bag instead of plastic bags.\n•    Change your food storage. Instead of using plastic, use compartment storage in your kitchen.\n\nFor cans:\n•     Replace canned fruits and vegetables by finding it in the freezer section of your grocery store.\n•     Start and cook from scratch. By buying the ingredient instead of buying the canned foods and cooking them at home, it not only saves money but they taste so much better than canned foods\n•     Start growing or visit your local farm to get your freshly harvested ingredients\n\nFor glass, try to cook from scratch. For example, instead of buying syrup in a glass bottle, we can try to make our own natural homemade syrup that are healthier and taste  just as delicious. If it’s hard for you, try to reuse or recycle more."),
         (UIImage(named: "illustrationReuse"), "\nReusing is taking old items that you might consider throwing away and finding a new use for them, thereby reducing the consumption of new resources. Reusing helps in situations where it isn't possible to reduce.\n\nHere ways to practice reuse in your daily life:\n\nFor plastic, you can reuse small plastic bottles as a snack storage, salt-sugar or spices storage. You can also reuse big bottles as a watering can, piggy bank, trash can, DIY Sprinkleror even a snack bowl.\n\nFor cans, try reusing soda cans as a lantern, candle holder, planter, cutlery or utensils storage. You can also use tin cans as a drawer organizer, or paint can cubbies.\n\nYou can reuse glass bottles and jars as a vase or as storage for food, spices (sugar, salt, etc.), and tools."),
@@ -30,47 +30,23 @@ class ChartViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        // View
         setupNavigationBar()
         setBackgroundImage()
         title()
         setStackView()
         
+        // StackView addTapped
         addTapped(parameter: &reduceSV)
         addTapped(parameter: &reuseSV)
         addTapped(parameter: &recycleSV)
         
+       
     }
     
-    // MARK: pieChartView
-    // setup Chart Data Entry
-//    func customizeChart(dataPoints: [String], values: [Double]){
-//        for i in 0..<dataPoints.count{
-//            let dataEntry = PieChartDataEntry(value: values[i], data: dataPoints[i])
-//            dataEntries.append(dataEntry)
-//        }
-//
-//    // setup Chart Data Set
-//        let pieChartDataSet = PieChartDataSet(entries: dataEntries)
-//            pieChartDataSet.drawValuesEnabled = true
-//
-//    // setup Chart Data
-//        let pieChartData = PieChartData(dataSet: pieChartDataSet)
-//        let format = NumberFormatter()
-//            format.numberStyle = .none
-//        let formatter = DefaultValueFormatter(formatter: format)
-//            pieChartData.setValueFormatter(formatter)
-//
-//    // Setup color
-//        let colors = [UIColor(named: "Red"), UIColor(named: "Yellow"), UIColor(named: "Blue")]
-//        pieChartDataSet.colors = colors as! [NSUIColor]
-//
-//    // Assign it to the chart's data
-//        pieChartView.data = pieChartData
-//    }
+   
     
-
-    // set navigation bar
+    // setup navigation bar
     private func setupNavigationBar(){
         self.view.backgroundColor = .white
         self.navigationController?.navigationBar.barTintColor = UIColor(red: 59/255, green: 126/255, blue: 115/255, alpha: 1)
@@ -84,12 +60,12 @@ class ChartViewController: UIViewController {
         self.title = "Manage Waste"
     }
             
-    // set background image
+    // setup background
     private func setBackgroundImage(){
         self.backgroundImage.image = UIImage(named: "ChartBg")
     }
         
-    // set manage Waste Title
+    // setup manage Waste Title
     private func title(){
         self.manageWasteTitle.text = "Manage Your Waste"
         self.manageWasteTitle.font = UIFont.systemFont(ofSize: 24)
@@ -97,7 +73,7 @@ class ChartViewController: UIViewController {
         self.manageWasteTitle.textColor = UIColor(red: 59/255, green: 126/255, blue: 115/255, alpha: 1)
     }
     
-    // set stack view
+    // setup stack view
     private func setStackView(){
         // set Reduce Stack View
         reduceSV.axis = .vertical
@@ -174,7 +150,7 @@ class ChartViewController: UIViewController {
         navigationControl.navigationBar.tintColor = .white
         navigationControl.navigationBar.barTintColor = .white
         
-//        navigationControl.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Manage Waste", style: .done, target: nil, action: #selector(back))
+        navigationControl.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Manage Waste", style: .plain, target: nil, action: #selector(back))
         
         
         switch gesture.view as? UIStackView {
@@ -190,16 +166,12 @@ class ChartViewController: UIViewController {
         default:
             controller.detail = manageInformation[3]
         }
-        
-       
-
+    
         self.present(navigationControl, animated: true, completion: nil)
     }
     
-//   @objc func back(){
-//                 dismiss(animated: true, completion: nil)
-//    }
-//    
-   
+   @objc func back(){
+        dismiss(animated: true, completion: nil)
+    }
 
 }
