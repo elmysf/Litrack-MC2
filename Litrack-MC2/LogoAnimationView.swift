@@ -15,7 +15,7 @@ class LogoAnimationView: UIView {
         guard let gifImage = try? UIImage(gifName: "littrack.gif") else {
             return UIImageView()
         }
-        return UIImageView(gifImage: gifImage, loopCount: 2)
+        return UIImageView(gifImage: gifImage, loopCount: 1 )
     }()
 
     override init(frame: CGRect) {
