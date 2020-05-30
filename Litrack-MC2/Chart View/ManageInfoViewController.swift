@@ -10,6 +10,7 @@ import UIKit
 
 class ManageInfoViewController: UIViewController {
     
+    @IBOutlet weak var navigationBar: UINavigationItem!
     @IBOutlet weak var illustrationImage: UIImageView!
     @IBOutlet weak var descriptionText: UITextView!
     
@@ -17,15 +18,12 @@ class ManageInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+    
         illustrationImage.image = detail.illustration
         descriptionText.text = detail.desc
         
         textViewDidChange(descriptionText)
         descriptionText.font = UIFont.systemFont(ofSize: 16)
-        descriptionText.backgroundColor = .white
-        
-        navigationController?.navigationItem.backBarButtonItem = UIBarButtonItem(title: "Manage Waste", style: .done, target: nil, action: #selector(back))
     }
     
     // setup line spacing in textview
@@ -37,7 +35,7 @@ class ManageInfoViewController: UIViewController {
         textView.attributedText = mutableAttrStr
     }
 
-    @objc func back(){
+    @objc func backButton(_ sender: Any) {
         dismiss(animated: true, completion: nil)
-       }
+    }
 }

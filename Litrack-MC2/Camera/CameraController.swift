@@ -166,7 +166,7 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
                  }
              }
     
-
+    
     @IBAction func LibraryBtn(_ sender: Any) {
             let picker : UIImagePickerController = UIImagePickerController()
             picker.sourceType = UIImagePickerController.SourceType.photoLibrary
@@ -196,4 +196,8 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
                    performSegue(withIdentifier: "PreviewPhoto", sender: nil)
                }
            }
-       }
+
+        }
+
+   
+

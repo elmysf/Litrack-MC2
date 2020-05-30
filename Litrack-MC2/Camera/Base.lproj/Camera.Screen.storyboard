@@ -61,7 +61,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="Manage"/>
                                 <connections>
-                                    <segue destination="inp-M5-8l3" kind="presentation" id="gvp-LN-5ZF"/>
+                                    <action selector="cameraButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mzc-bP-FCh"/>
+                                    <segue destination="inp-M5-8l3" kind="presentation" identifier="ChartScreen" animates="NO" modalPresentationStyle="fullScreen" id="gvp-LN-5ZF"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -97,7 +98,9 @@
         <!--Chart.Screen-->
         <scene sceneID="rfs-7c-jHo">
             <objects>
-                <viewControllerPlaceholder storyboardName="Chart.Screen" id="inp-M5-8l3" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="Chart.Screen" id="inp-M5-8l3" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="tgO-KT-oiE"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aYU-AQ-2GC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="508" y="-156"/>

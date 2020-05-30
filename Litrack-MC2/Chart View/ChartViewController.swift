@@ -41,10 +41,7 @@ class ChartViewController: UIViewController {
         addTapped(parameter: &reuseSV)
         addTapped(parameter: &recycleSV)
         
-       
     }
-    
-   
     
     // setup navigation bar
     private func setupNavigationBar(){
@@ -54,12 +51,14 @@ class ChartViewController: UIViewController {
         self.navigationController?.navigationBar.barStyle = .black
         self.navigationController?.navigationBar.isTranslucent =  false
         self.navigationController?.navigationBar.tintColor = .white
-
-        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
         self.title = "Manage Waste"
     }
             
+    @IBAction func backToCamera(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
+    
     // setup background
     private func setBackgroundImage(){
         self.backgroundImage.image = UIImage(named: "ChartBg")

@@ -130,6 +130,25 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		CB4E2EFD2481671A007207C1 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				CBE7A09424744FD300868A22 /* ViewController.swift */,
+				CBE7A09624744FD300868A22 /* Main.storyboard */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		CB4E2EFE2481672B007207C1 /* Chart View */ = {
+			isa = PBXGroup;
+			children = (
+				CB40C2EE2475548200CE2D9E /* Chart.Screen.storyboard */,
+				CB44DE1024778D3400F4B5C7 /* ManageInfoViewController.swift */,
+				CB44DE0E247702E900F4B5C7 /* ChartViewController.swift */,
+			);
+			path = "Chart View";
+			sourceTree = "<group>";
+		};
 		CBE7A08424744FD200868A22 = {
 			isa = PBXGroup;
 			children = (
@@ -155,14 +174,11 @@
 		CBE7A08F24744FD300868A22 /* Litrack-MC2 */ = {
 			isa = PBXGroup;
 			children = (
+				CB4E2EFE2481672B007207C1 /* Chart View */,
+				CB4E2EFD2481671A007207C1 /* Onboarding */,
 				F05C5A8224815D550069CB97 /* Camera */,
 				CBE7A09024744FD300868A22 /* AppDelegate.swift */,
 				CBE7A09224744FD300868A22 /* SceneDelegate.swift */,
-				CBE7A09424744FD300868A22 /* ViewController.swift */,
-				CBE7A09624744FD300868A22 /* Main.storyboard */,
-				CB40C2EE2475548200CE2D9E /* Chart.Screen.storyboard */,
-				CB44DE1024778D3400F4B5C7 /* ManageInfoViewController.swift */,
-				CB44DE0E247702E900F4B5C7 /* ChartViewController.swift */,
 				CBE7A09C24744FD500868A22 /* Assets.xcassets */,
 				CBE7A09E24744FD500868A22 /* LaunchScreen.storyboard */,
 				CBE7A0A124744FD500868A22 /* Info.plist */,
@@ -634,6 +650,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XV6Q4LNRD5;
 				INFOPLIST_FILE = "Litrack-MC2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -653,6 +670,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XV6Q4LNRD5;
 				INFOPLIST_FILE = "Litrack-MC2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

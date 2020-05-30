@@ -53,7 +53,7 @@ class PreviewViewController: UIViewController {
             }
             DispatchQueue.main.async {
                 let imageName = firstResult.identifier.contains ("Can") ? "Can" : "No Waste"
-                _ = firstResult.identifier.contains ("Bottle") ? "Botlle" : "No Waste"
+                _ = firstResult.identifier.contains ("Plastic") ? "Plastic" : "No Waste"
                 _ = firstResult.identifier.contains ("Glass") ? "Glass" : "No Waste"
                 self.ResultPhoto.image = UIImage(named: imageName)
                 self.view.hideLoadingView()
