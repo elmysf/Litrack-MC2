@@ -1,9 +1,9 @@
 //
 //  LogoAnimationView.swift
-//  AnimatedGifLaunchScreen-Example
+//  Litrack
 //
-//  Created by Amer Hukic on 13/09/2018.
-//  Copyright © 2018 Amer Hukic. All rights reserved.
+//  Created by Sufiandy Elmy on 28/05/20.
+//  Copyright © 2020 Sufiandy Elmy. All rights reserved.
 //
 
 import UIKit
