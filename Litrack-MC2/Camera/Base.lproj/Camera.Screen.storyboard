@@ -62,7 +62,7 @@
                                 <state key="normal" image="Manage"/>
                                 <connections>
                                     <action selector="cameraButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Mzc-bP-FCh"/>
-                                    <segue destination="inp-M5-8l3" kind="presentation" identifier="ChartScreen" animates="NO" modalPresentationStyle="fullScreen" id="gvp-LN-5ZF"/>
+                                    <segue destination="inp-M5-8l3" kind="presentation" identifier="Chart.Screen" animates="NO" modalPresentationStyle="fullScreen" id="gvp-LN-5ZF"/>
                                 </connections>
                             </button>
                         </subviews>
