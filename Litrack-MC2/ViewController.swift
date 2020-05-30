@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  Litrack-MC2
+//  AnimatedGifLaunchScreen-Example
 //
-//  Created by Sufiandy Elmy on 30/05/20.
-//  Copyright © 2020 Karina Widyastuti. All rights reserved.
+//  Created by Amer Hukic on 13/09/2018.
+//  Copyright © 2018 Amer Hukic. All rights reserved.
 //
 
 import UIKit
@@ -26,8 +26,10 @@ class ViewController: UIViewController {
     }
 
 }
+
 extension ViewController: SwiftyGifDelegate {
     func gifDidStop(sender: UIImageView) {
         logoAnimationView.isHidden = true
     }
 }
+
