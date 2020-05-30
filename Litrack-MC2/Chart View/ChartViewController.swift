@@ -69,9 +69,15 @@ class ChartViewController: UIViewController {
         UpdateChartData()
     }
     
+    // MARK: Create Chart
     func UpdateChartData(){
         let chartDataSet = PieChartDataSet(entries: wasteUsages, label: nil)
         let chartData = PieChartData(dataSet: chartDataSet)
+        let format = NumberFormatter()
+        format.numberStyle = .none
+        let formatter = DefaultValueFormatter(formatter: format)
+        chartData.setValueFormatter(formatter)
+        
         
         let colors = [UIColor(red:  208/255, green: 103/255, blue: 103/255, alpha: 1), UIColor(red: 59/255, green: 109/255, blue: 179/255, alpha: 1), UIColor(red: 234/255, green: 190/255, blue: 65/255, alpha: 1)]
         chartDataSet.colors = colors
