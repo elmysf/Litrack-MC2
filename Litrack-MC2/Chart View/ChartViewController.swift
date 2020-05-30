@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CoreData
 import Charts
 
 class ChartViewController: UIViewController {
@@ -18,6 +17,17 @@ class ChartViewController: UIViewController {
     @IBOutlet weak var reuseSV: UIStackView!
     @IBOutlet weak var recycleSV: UIStackView!
     @IBOutlet weak var pieChartView: PieChartView!
+    
+    // var plasticWaste = PieChartDataEntry(value: 0)
+    var plasticWaste = PieChartDataEntry(value: 10)
+    
+    // var canWaste = PieChartDataEntry(value: 0)
+    var canWaste = PieChartDataEntry(value: 5)
+    
+    // var glassWaste = PieChartDataEntry(value: 0)
+    var glassWaste = PieChartDataEntry(value: 3)
+
+    var wasteUsages = [PieChartDataEntry]()
     
     // Manage Waste Information in ManageViewController
     var manageInformation = [
@@ -41,6 +51,32 @@ class ChartViewController: UIViewController {
         addTapped(parameter: &reuseSV)
         addTapped(parameter: &recycleSV)
         
+        // Chart View
+        pieChartView.chartDescription?.text = ""
+        pieChartView.holeColor = .none
+        
+        // plasticWaste.value = value....
+        plasticWaste.label = "Plastic"
+        
+        // canWaste.value = value....
+        canWaste.label = "Can"
+        
+        // glassWaste.value = value....
+        glassWaste.label = "Glass"
+        
+        wasteUsages = [plasticWaste, canWaste, glassWaste]
+        
+        UpdateChartData()
+    }
+    
+    func UpdateChartData(){
+        let chartDataSet = PieChartDataSet(entries: wasteUsages, label: nil)
+        let chartData = PieChartData(dataSet: chartDataSet)
+        
+        let colors = [UIColor(red:  208/255, green: 103/255, blue: 103/255, alpha: 1), UIColor(red: 59/255, green: 109/255, blue: 179/255, alpha: 1), UIColor(red: 234/255, green: 190/255, blue: 65/255, alpha: 1)]
+        chartDataSet.colors = colors
+        
+        pieChartView.data = chartData
     }
     
     // setup navigation bar
