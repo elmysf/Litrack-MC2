@@ -184,11 +184,15 @@
 		CBE7A08F24744FD300868A22 /* Litrack-MC2 */ = {
 			isa = PBXGroup;
 			children = (
-				F042793C2482A26400CA355D /* LaunchScreen */,
 				CB4E2EFE2481672B007207C1 /* Chart View */,
 				CB4E2EFD2481671A007207C1 /* Onboarding */,
 				F05C5A8224815D550069CB97 /* Camera */,
 				CBE7A09024744FD300868A22 /* AppDelegate.swift */,
+				F04279432482A34E00CA355D /* UIView+Constraints.swift */,
+				F04279472482BB5E00CA355D /* ViewController.swift */,
+				F04279412482A30D00CA355D /* LogoAnimationView.swift */,
+				F042793F2482A2E600CA355D /* littrack.gif */,
+				F04279492482BC5E00CA355D /* LaunchScreen.storyboard */,
 				CBE7A09224744FD300868A22 /* SceneDelegate.swift */,
 				CBE7A09C24744FD500868A22 /* Assets.xcassets */,
 				CBE7A0A124744FD500868A22 /* Info.plist */,
@@ -213,18 +217,6 @@
 				CBE7A0B724744FD500868A22 /* Info.plist */,
 			);
 			path = "Litrack-MC2UITests";
-			sourceTree = "<group>";
-		};
-		F042793C2482A26400CA355D /* LaunchScreen */ = {
-			isa = PBXGroup;
-			children = (
-				F04279432482A34E00CA355D /* UIView+Constraints.swift */,
-				F04279412482A30D00CA355D /* LogoAnimationView.swift */,
-				F042793F2482A2E600CA355D /* littrack.gif */,
-				F04279492482BC5E00CA355D /* LaunchScreen.storyboard */,
-				F04279472482BB5E00CA355D /* ViewController.swift */,
-			);
-			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
 		F05C5A8224815D550069CB97 /* Camera */ = {
