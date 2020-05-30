@@ -1,5 +1,5 @@
 //
-//  LaunchController.swift
+//  ViewController.swift
 //  Litrack-MC2
 //
 //  Created by Sufiandy Elmy on 30/05/20.
@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyGif
 
-class ViewController: UIViewController, SwiftyGifDelegate {
+class ViewController: UIViewController {
 
     let logoAnimationView = LogoAnimationView()
     
@@ -28,6 +28,6 @@ class ViewController: UIViewController, SwiftyGifDelegate {
 }
 extension ViewController: SwiftyGifDelegate {
     func gifDidStop(sender: UIImageView) {
-        LogoAnimationView.isHidden = true
+        logoAnimationView.isHidden = true
     }
- }
+}

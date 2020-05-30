@@ -1,16 +1,16 @@
 //
-//  ViewController.swift
+//  MainController.swift
 //  Litrack-MC2
 //
-//  Created by Karina Widyastuti on 20/05/20.
+//  Created by Sufiandy Elmy on 30/05/20.
 //  Copyright © 2020 Karina Widyastuti. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
-
-    @IBOutlet weak var welcome: UILabel!
+class MainController: UIViewController {
+    
+   @IBOutlet weak var welcome: UILabel!
     @IBOutlet weak var getStarted: UIButton!
     
     @IBOutlet weak var image1: UIImageView!

@@ -12,19 +12,19 @@
 		CB44DE1124778D3400F4B5C7 /* ManageInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44DE1024778D3400F4B5C7 /* ManageInfoViewController.swift */; };
 		CBE7A09124744FD300868A22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7A09024744FD300868A22 /* AppDelegate.swift */; };
 		CBE7A09324744FD300868A22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7A09224744FD300868A22 /* SceneDelegate.swift */; };
-		CBE7A09524744FD300868A22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7A09424744FD300868A22 /* ViewController.swift */; };
 		CBE7A09824744FD300868A22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE7A09624744FD300868A22 /* Main.storyboard */; };
 		CBE7A09B24744FD300868A22 /* Litrack_MC2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CBE7A09924744FD300868A22 /* Litrack_MC2.xcdatamodeld */; };
 		CBE7A09D24744FD500868A22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBE7A09C24744FD500868A22 /* Assets.xcassets */; };
-		CBE7A0A024744FD500868A22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE7A09E24744FD500868A22 /* LaunchScreen.storyboard */; };
 		CBE7A0AB24744FD500868A22 /* Litrack_MC2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7A0AA24744FD500868A22 /* Litrack_MC2Tests.swift */; };
 		CBE7A0B624744FD500868A22 /* Litrack_MC2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7A0B524744FD500868A22 /* Litrack_MC2UITests.swift */; };
 		CC6EE1080731BE59DD06D3E5 /* Pods_Litrack_MC2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BAAD205670E2DB73033AA1 /* Pods_Litrack_MC2Tests.framework */; };
-		E24CBE004A48938CCA8F0936 /* Pods_Litrack_MC2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0B1849CAC42DE80538D835 /* Pods_Litrack_MC2.framework */; };
-		F042793E2482A2AA00CA355D /* LaunchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F042793D2482A2AA00CA355D /* LaunchController.swift */; };
 		F04279402482A2E600CA355D /* littrack.gif in Resources */ = {isa = PBXBuildFile; fileRef = F042793F2482A2E600CA355D /* littrack.gif */; };
 		F04279422482A30D00CA355D /* LogoAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04279412482A30D00CA355D /* LogoAnimationView.swift */; };
 		F04279442482A34E00CA355D /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04279432482A34E00CA355D /* UIView+Constraints.swift */; };
+		F04279462482BAF500CA355D /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04279452482BAF500CA355D /* MainController.swift */; };
+		F04279482482BB5E00CA355D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04279472482BB5E00CA355D /* ViewController.swift */; };
+		F042794A2482BC5E00CA355D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F04279492482BC5E00CA355D /* LaunchScreen.storyboard */; };
+		F042794B2482BCFA00CA355D /* Pods_Litrack_MC2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0B1849CAC42DE80538D835 /* Pods_Litrack_MC2.framework */; };
 		F05C5A8824815D550069CB97 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C5A8324815D550069CB97 /* CameraController.swift */; };
 		F05C5A8924815D550069CB97 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C5A8424815D550069CB97 /* PreviewViewController.swift */; };
 		F05C5A8B24815D550069CB97 /* Camera.Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F05C5A8624815D550069CB97 /* Camera.Screen.storyboard */; };
@@ -64,11 +64,9 @@
 		CBE7A08D24744FD300868A22 /* Litrack-MC2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Litrack-MC2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE7A09024744FD300868A22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBE7A09224744FD300868A22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CBE7A09424744FD300868A22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CBE7A09724744FD300868A22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CBE7A09A24744FD300868A22 /* Litrack_MC2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Litrack_MC2.xcdatamodel; sourceTree = "<group>"; };
 		CBE7A09C24744FD500868A22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CBE7A09F24744FD500868A22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBE7A0A124744FD500868A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CBE7A0A624744FD500868A22 /* Litrack-MC2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Litrack-MC2Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE7A0AA24744FD500868A22 /* Litrack_MC2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Litrack_MC2Tests.swift; sourceTree = "<group>"; };
@@ -76,10 +74,13 @@
 		CBE7A0B124744FD500868A22 /* Litrack-MC2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Litrack-MC2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE7A0B524744FD500868A22 /* Litrack_MC2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Litrack_MC2UITests.swift; sourceTree = "<group>"; };
 		CBE7A0B724744FD500868A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F042793D2482A2AA00CA355D /* LaunchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchController.swift; sourceTree = "<group>"; };
 		F042793F2482A2E600CA355D /* littrack.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = littrack.gif; sourceTree = "<group>"; };
 		F04279412482A30D00CA355D /* LogoAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogoAnimationView.swift; sourceTree = "<group>"; };
 		F04279432482A34E00CA355D /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
+		F04279452482BAF500CA355D /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		F04279472482BB5E00CA355D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F04279492482BC5E00CA355D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F042794E2482BD4400CA355D /* SwiftyGif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyGif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F05C5A8324815D550069CB97 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		F05C5A8424815D550069CB97 /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 		F05C5A8724815D550069CB97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Camera.Screen.storyboard; sourceTree = "<group>"; };
@@ -92,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E24CBE004A48938CCA8F0936 /* Pods_Litrack_MC2.framework in Frameworks */,
+				F042794B2482BCFA00CA355D /* Pods_Litrack_MC2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +119,7 @@
 		1ADB58752453BA90C8422CAE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F042794E2482BD4400CA355D /* SwiftyGif.framework */,
 				FD0B1849CAC42DE80538D835 /* Pods_Litrack_MC2.framework */,
 				79ADACCEB8A1764428091392 /* Pods_Litrack_MC2_Litrack_MC2UITests.framework */,
 				63BAAD205670E2DB73033AA1 /* Pods_Litrack_MC2Tests.framework */,
@@ -141,7 +143,7 @@
 		CB4E2EFD2481671A007207C1 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				CBE7A09424744FD300868A22 /* ViewController.swift */,
+				F04279452482BAF500CA355D /* MainController.swift */,
 				CBE7A09624744FD300868A22 /* Main.storyboard */,
 			);
 			path = Onboarding;
@@ -217,10 +219,10 @@
 			isa = PBXGroup;
 			children = (
 				F04279432482A34E00CA355D /* UIView+Constraints.swift */,
-				CBE7A09E24744FD500868A22 /* LaunchScreen.storyboard */,
 				F04279412482A30D00CA355D /* LogoAnimationView.swift */,
 				F042793F2482A2E600CA355D /* littrack.gif */,
-				F042793D2482A2AA00CA355D /* LaunchController.swift */,
+				F04279492482BC5E00CA355D /* LaunchScreen.storyboard */,
+				F04279472482BB5E00CA355D /* ViewController.swift */,
 			);
 			path = LaunchScreen;
 			sourceTree = "<group>";
@@ -345,10 +347,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBE7A0A024744FD500868A22 /* LaunchScreen.storyboard in Resources */,
 				CBE7A09D24744FD500868A22 /* Assets.xcassets in Resources */,
 				F05C5A8B24815D550069CB97 /* Camera.Screen.storyboard in Resources */,
 				CB40C2EF2475548200CE2D9E /* Chart.Screen.storyboard in Resources */,
+				F042794A2482BC5E00CA355D /* LaunchScreen.storyboard in Resources */,
 				F04279402482A2E600CA355D /* littrack.gif in Resources */,
 				CBE7A09824744FD300868A22 /* Main.storyboard in Resources */,
 			);
@@ -479,16 +481,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				F04279422482A30D00CA355D /* LogoAnimationView.swift in Sources */,
-				CBE7A09524744FD300868A22 /* ViewController.swift in Sources */,
 				CBE7A09124744FD300868A22 /* AppDelegate.swift in Sources */,
 				F04279442482A34E00CA355D /* UIView+Constraints.swift in Sources */,
 				F05C5A8824815D550069CB97 /* CameraController.swift in Sources */,
 				CBE7A09324744FD300868A22 /* SceneDelegate.swift in Sources */,
 				CBE7A09B24744FD300868A22 /* Litrack_MC2.xcdatamodeld in Sources */,
 				CB44DE0F247702E900F4B5C7 /* ChartViewController.swift in Sources */,
-				F042793E2482A2AA00CA355D /* LaunchController.swift in Sources */,
+				F04279482482BB5E00CA355D /* ViewController.swift in Sources */,
 				CB44DE1124778D3400F4B5C7 /* ManageInfoViewController.swift in Sources */,
 				F08277F0248222D0006FA997 /* WasteClassifier.mlmodel in Sources */,
+				F04279462482BAF500CA355D /* MainController.swift in Sources */,
 				F05C5A8924815D550069CB97 /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,14 +533,6 @@
 				CBE7A09724744FD300868A22 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		CBE7A09E24744FD500868A22 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CBE7A09F24744FD500868A22 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 		F05C5A8624815D550069CB97 /* Camera.Screen.storyboard */ = {
