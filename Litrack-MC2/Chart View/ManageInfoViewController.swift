@@ -18,6 +18,8 @@ class ManageInfoViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+         overrideUserInterfaceStyle = .light
     
         illustrationImage.image = detail.illustration
         descriptionText.text = detail.desc
