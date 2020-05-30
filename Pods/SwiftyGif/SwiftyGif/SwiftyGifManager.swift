@@ -15,8 +15,7 @@ open class SwiftyGifManager {
     fileprivate var displayViews: [UIImageView] = []
     fileprivate var totalGifSize: Int
     fileprivate var memoryLimit: Int
-    open var haveCache: Bool
-    open var remoteCache : [URL : Data] = [:]
+    open var  haveCache: Bool
     
     /// Initialize a manager
     ///

@@ -2,11 +2,11 @@ PODS:
   - Charts (3.5.0):
     - Charts/Core (= 3.5.0)
   - Charts/Core (3.5.0)
-  - SwiftyGif (5.3.0)
+  - SwiftyGif (5.1.1)
 
 DEPENDENCIES:
   - Charts
-  - SwiftyGif
+  - SwiftyGif (= 5.1.1)
 
 SPEC REPOS:
   trunk:
@@ -15,8 +15,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
-  SwiftyGif: e466e86c660d343357ab944a819a101c4127cb40
+  SwiftyGif: f7702483db93586a41f04f4927cd682852a2fa10
 
-PODFILE CHECKSUM: 8a134335b4bfb3fa78fcdc31fd79554709433359
+PODFILE CHECKSUM: 9eb89634e43820147a5fe25e19562fe5d0058be1
 
 COCOAPODS: 1.9.1

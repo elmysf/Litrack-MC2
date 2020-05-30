@@ -4,13 +4,9 @@
 [![Build Status](https://travis-ci.org/kirualex/SwiftyGif.svg?branch=master)](https://travis-ci.org/kirualex/SwiftyGif)
 [![Pod License](http://img.shields.io/cocoapods/l/SDWebImage.svg?style=flat)](https://raw.githubusercontent.com/kirualex/SwiftyGif/master/LICENSE)
 
-# SwiftyGif
 High performance & easy to use Gif engine
 
-<p align="center">
-    </br>
-    <img src="https://github.com/kirualex/SwiftyGif/blob/master/example.gif" align="center" />
-</p>
+<img src="http://i.imgur.com/p8A6jJh.gif" width="280" />
 
 ## Features
 - [x] UIImage and UIImageView extension based
@@ -21,24 +17,11 @@ High performance & easy to use Gif engine
 - [x] Allow control CPU/memory tradeoff via 'memoryLimit' 
 
 ## Installation
-
 #### With CocoaPods
 ```ruby
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 pod 'SwiftyGif'
-```
-
-#### With Carthage
-Follow the usual Carthage instructions on how to [add a framework to an application](https://github.com/Carthage/Carthage#adding-frameworks-to-an-application). When adding SwiftyGif among the frameworks listed in `Cartfile`, apply its syntax for [GitHub repositories](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#github-repositories):
-
-```
-github "kirualex/SwiftyGif"
-```
-
-#### With Swift Package Manager
-```ruby
-https://github.com/kirualex/SwiftyGif.git
 ```
 
 ## How to Use
@@ -57,7 +40,7 @@ do {
     let imageview = UIImageView(gifImage: gif, loopCount: 3) // Use -1 for infinite loop
     imageview.frame = view.bounds
     view.addSubview(imageview)
-} catch {
+} catch error {
     print(error)
 }
 ```
@@ -82,7 +65,7 @@ Setting a lower level of integrity will allow for frame skipping, lowering both 
 ```swift
 do {
     let gif = try UIImage(gifName: "MyImage.gif", levelOfIntegrity:0.5)
-} catch {
+} catch error {
     print(error)
 }
 ```

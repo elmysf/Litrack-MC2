@@ -7,7 +7,7 @@ target 'Litrack-MC2' do
 
   # Pods for Litrack-MC2
 	pod 'Charts'
-	pod 'SwiftyGif'
+	pod 'SwiftyGif', '5.1.1'
 
   target 'Litrack-MC2Tests' do
     inherit! :search_paths
