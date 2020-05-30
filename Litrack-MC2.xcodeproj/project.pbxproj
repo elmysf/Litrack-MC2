@@ -23,8 +23,8 @@
 		E24CBE004A48938CCA8F0936 /* Pods_Litrack_MC2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0B1849CAC42DE80538D835 /* Pods_Litrack_MC2.framework */; };
 		F05C5A8824815D550069CB97 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C5A8324815D550069CB97 /* CameraController.swift */; };
 		F05C5A8924815D550069CB97 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05C5A8424815D550069CB97 /* PreviewViewController.swift */; };
-		F05C5A8A24815D550069CB97 /* WasteClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F05C5A8524815D550069CB97 /* WasteClassifier.mlmodel */; };
 		F05C5A8B24815D550069CB97 /* Camera.Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F05C5A8624815D550069CB97 /* Camera.Screen.storyboard */; };
+		F08277F0248222D0006FA997 /* WasteClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F08277EF248222D0006FA997 /* WasteClassifier.mlmodel */; };
 		F48058ED025213F094BD9194 /* Pods_Litrack_MC2_Litrack_MC2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79ADACCEB8A1764428091392 /* Pods_Litrack_MC2_Litrack_MC2UITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,8 +74,8 @@
 		CBE7A0B724744FD500868A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F05C5A8324815D550069CB97 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		F05C5A8424815D550069CB97 /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
-		F05C5A8524815D550069CB97 /* WasteClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WasteClassifier.mlmodel; sourceTree = "<group>"; };
 		F05C5A8724815D550069CB97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Camera.Screen.storyboard; sourceTree = "<group>"; };
+		F08277EF248222D0006FA997 /* WasteClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WasteClassifier.mlmodel; sourceTree = "<group>"; };
 		FD0B1849CAC42DE80538D835 /* Pods_Litrack_MC2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Litrack_MC2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -210,7 +210,7 @@
 			children = (
 				F05C5A8324815D550069CB97 /* CameraController.swift */,
 				F05C5A8424815D550069CB97 /* PreviewViewController.swift */,
-				F05C5A8524815D550069CB97 /* WasteClassifier.mlmodel */,
+				F08277EF248222D0006FA997 /* WasteClassifier.mlmodel */,
 				F05C5A8624815D550069CB97 /* Camera.Screen.storyboard */,
 			);
 			path = Camera;
@@ -464,7 +464,7 @@
 				CBE7A09B24744FD300868A22 /* Litrack_MC2.xcdatamodeld in Sources */,
 				CB44DE0F247702E900F4B5C7 /* ChartViewController.swift in Sources */,
 				CB44DE1124778D3400F4B5C7 /* ManageInfoViewController.swift in Sources */,
-				F05C5A8A24815D550069CB97 /* WasteClassifier.mlmodel in Sources */,
+				F08277F0248222D0006FA997 /* WasteClassifier.mlmodel in Sources */,
 				F05C5A8924815D550069CB97 /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -578,7 +578,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -632,7 +632,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -648,7 +648,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XV6Q4LNRD5;
+				DEVELOPMENT_TEAM = 9T6A37YY89;
 				INFOPLIST_FILE = "Litrack-MC2/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -668,7 +668,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XV6Q4LNRD5;
+				DEVELOPMENT_TEAM = 9T6A37YY89;
 				INFOPLIST_FILE = "Litrack-MC2/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -689,7 +689,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XV6Q4LNRD5;
+				DEVELOPMENT_TEAM = 9T6A37YY89;
 				INFOPLIST_FILE = "Litrack-MC2Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -712,7 +712,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XV6Q4LNRD5;
+				DEVELOPMENT_TEAM = 9T6A37YY89;
 				INFOPLIST_FILE = "Litrack-MC2Tests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -734,7 +734,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XV6Q4LNRD5;
+				DEVELOPMENT_TEAM = 9T6A37YY89;
 				INFOPLIST_FILE = "Litrack-MC2UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -755,7 +755,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XV6Q4LNRD5;
+				DEVELOPMENT_TEAM = 9T6A37YY89;
 				INFOPLIST_FILE = "Litrack-MC2UITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
