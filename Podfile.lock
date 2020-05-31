@@ -2,21 +2,25 @@ PODS:
   - Charts (3.5.0):
     - Charts/Core (= 3.5.0)
   - Charts/Core (3.5.0)
+  - lottie-ios (3.1.8)
   - SwiftyGif (5.1.1)
 
 DEPENDENCIES:
   - Charts
+  - lottie-ios
   - SwiftyGif (= 5.1.1)
 
 SPEC REPOS:
   trunk:
     - Charts
+    - lottie-ios
     - SwiftyGif
 
 SPEC CHECKSUMS:
   Charts: 40a08591df1f8ad5c223ddedfb1a06da92f24f7c
+  lottie-ios: 48fac6be217c76937e36e340e2d09cf7b10b7f5f
   SwiftyGif: f7702483db93586a41f04f4927cd682852a2fa10
 
-PODFILE CHECKSUM: 9eb89634e43820147a5fe25e19562fe5d0058be1
+PODFILE CHECKSUM: 74c5b814b78a127185cf57c9381ca2c877d5d248
 
 COCOAPODS: 1.9.1
