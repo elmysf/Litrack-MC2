@@ -1,6 +1,6 @@
 //
-//  ViewController.swift
-//  CustomCamera
+//  CameraController.swift
+//  Litrack-MC2
 //
 //  Created by Sufiandy Elmy on 28/05/20.
 //  Copyright © 2020 Sufiandy Elmy. All rights reserved.
