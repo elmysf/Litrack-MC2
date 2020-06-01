@@ -152,8 +152,8 @@
                                     <constraint firstItem="EAq-P7-zYz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="tue-mu-RXE" secondAttribute="trailing" constant="8" symbolic="YES" id="wsV-6d-0gw"/>
                                 </constraints>
                             </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="No waste" translatesAutoresizingMaskIntoConstraints="NO" id="BLt-DX-h0R">
-                                <rect key="frame" x="0.0" y="57" width="414" height="110"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BLt-DX-h0R">
+                                <rect key="frame" x="0.0" y="44" width="414" height="182"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -176,13 +176,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IF9-EV-k1b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="764" y="258"/>
+            <point key="canvasLocation" x="763.768115942029" y="257.8125"/>
         </scene>
     </scenes>
     <resources>
         <image name="Camera" width="47" height="36"/>
         <image name="Flash Off Icon" width="24" height="24"/>
         <image name="Manage" width="45" height="50"/>
-        <image name="No waste" width="394.5" height="310.5"/>
     </resources>
 </document>

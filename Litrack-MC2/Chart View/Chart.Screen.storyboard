@@ -69,6 +69,12 @@
                                 <action selector="backToCamera:" destination="jgp-sL-iou" id="YmH-CY-PmE"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="List" image="list.dash" catalog="system" id="7Cb-Lw-EUB">
+                            <connections>
+                                <action selector="backToCamera:" destination="jgp-sL-iou" id="Fps-xW-dEK"/>
+                                <segue destination="d08-zd-jhH" kind="presentation" id="vlM-Nq-to5"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="backgroundImage" destination="roK-FF-WR9" id="3yg-LB-Cya"/>
@@ -169,6 +175,14 @@
             </objects>
             <point key="canvasLocation" x="-491.304347826087" y="-1966.0714285714284"/>
         </scene>
+        <!--List.Screen-->
+        <scene sceneID="3kp-Nt-cpc">
+            <objects>
+                <viewControllerPlaceholder storyboardName="List.Screen" id="d08-zd-jhH" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jfa-yD-ntu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="976" y="-2538"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="gWy-aF-7U5">
             <objects>
@@ -189,6 +203,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="list.dash" catalog="system" width="128" height="85"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
     </resources>
 </document>
