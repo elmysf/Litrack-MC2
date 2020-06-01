@@ -18,14 +18,7 @@ class ChartViewController: UIViewController {
     @IBOutlet weak var recycleSV: UIStackView!
     @IBOutlet weak var pieChartView: PieChartView!
     
-    // var plasticWaste = PieChartDataEntry(value: 0)
-    var plasticWaste = PieChartDataEntry(value: 10)
-    
-    // var canWaste = PieChartDataEntry(value: 0)
-    var canWaste = PieChartDataEntry(value: 5)
-    
-    // var glassWaste = PieChartDataEntry(value: 0)
-    var glassWaste = PieChartDataEntry(value: 3)
+
 
     var wasteUsages = [PieChartDataEntry]()
     
@@ -41,6 +34,17 @@ class ChartViewController: UIViewController {
         super.viewDidLoad()
     
         
+        //load data
+        guard let wastes = CoreDataManager.shared.fetchWastes() else{ return }
+     
+        var plastic: Double = (Double(wastes.filter{$0.name == "Plastic"}.count)/Double(wastes.count))
+         var glass: Double = (Double(wastes.filter{$0.name == "Glass"}.count)/Double(wastes.count))
+         var can: Double = (Double(wastes.filter{$0.name == "Can"}.count)/Double(wastes.count))
+    
+        let plasticWaste = PieChartDataEntry(value: Double(plastic ))
+        let canWaste = PieChartDataEntry(value: Double(can ))
+        let glassWaste = PieChartDataEntry(value:  Double(glass ) )
+        //nilai = PieChartDataEntry(value: wastes.)
         // View
         setupNavigationBar()
         setBackgroundImage()
@@ -56,13 +60,8 @@ class ChartViewController: UIViewController {
         pieChartView.chartDescription?.text = ""
         pieChartView.holeColor = .none
         
-        // plasticWaste.value = value....
         plasticWaste.label = "Plastic"
-        
-        // canWaste.value = value....
         canWaste.label = "Can"
-        
-        // glassWaste.value = value....
         glassWaste.label = "Glass"
         
         wasteUsages = [plasticWaste, canWaste, glassWaste]
@@ -72,10 +71,19 @@ class ChartViewController: UIViewController {
     
     // MARK: Create Chart
     func UpdateChartData(){
+        
+        
         let chartDataSet = PieChartDataSet(entries: wasteUsages, label: nil)
+        
+        
+        chartDataSet.drawIconsEnabled = false
+        chartDataSet.sliceSpace = 2
+        
         let chartData = PieChartData(dataSet: chartDataSet)
         let format = NumberFormatter()
-        format.numberStyle = .none
+        format.numberStyle = .percent
+        format.maximumFractionDigits = 1
+        format.percentSymbol = " %"
         let formatter = DefaultValueFormatter(formatter: format)
         chartData.setValueFormatter(formatter)
         

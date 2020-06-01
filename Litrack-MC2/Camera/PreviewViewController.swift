@@ -58,8 +58,8 @@ class PreviewViewController: UIViewController {
            DispatchQueue.main.async {
                if(firstResult.identifier.contains("Can")){
                    self.name = "Can"
-               }else if(firstResult.identifier.contains("Bottle")){
-                   self.name = "Bottle"
+               }else if(firstResult.identifier.contains("Plastic")){
+                   self.name = "Plastic"
                }else if(firstResult.identifier.contains ("Glass")){
                    self.name = "Glass"
                }else if(firstResult.identifier.contains ("Nowaste")){
