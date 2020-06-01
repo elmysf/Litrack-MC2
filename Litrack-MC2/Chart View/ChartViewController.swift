@@ -38,8 +38,8 @@ class ChartViewController: UIViewController {
         guard let wastes = CoreDataManager.shared.fetchWastes() else{ return }
      
         var plastic: Double = (Double(wastes.filter{$0.name == "Plastic"}.count)/Double(wastes.count))
-         var glass: Double = (Double(wastes.filter{$0.name == "Glass"}.count)/Double(wastes.count))
-         var can: Double = (Double(wastes.filter{$0.name == "Can"}.count)/Double(wastes.count))
+        var glass: Double = (Double(wastes.filter{$0.name == "Glass"}.count)/Double(wastes.count))
+        var can: Double = (Double(wastes.filter{$0.name == "Can"}.count)/Double(wastes.count))
     
         let plasticWaste = PieChartDataEntry(value: Double(plastic ))
         let canWaste = PieChartDataEntry(value: Double(can ))
