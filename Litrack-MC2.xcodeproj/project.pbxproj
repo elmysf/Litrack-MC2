@@ -31,7 +31,6 @@
 		F08277F0248222D0006FA997 /* WasteClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = F08277EF248222D0006FA997 /* WasteClassifier.mlmodel */; };
 		F0DAFA3A2484E6DF00E1184C /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DAFA382484E6DF00E1184C /* CoreDataManager.swift */; };
 		F0DAFA3B2484E6DF00E1184C /* ListDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DAFA392484E6DF00E1184C /* ListDataViewController.swift */; };
-		F0DAFA3D2484ED5000E1184C /* List.Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0DAFA3C2484ED5000E1184C /* List.Screen.storyboard */; };
 		F48058ED025213F094BD9194 /* Pods_Litrack_MC2_Litrack_MC2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79ADACCEB8A1764428091392 /* Pods_Litrack_MC2_Litrack_MC2UITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,7 +89,6 @@
 		F08277EF248222D0006FA997 /* WasteClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = WasteClassifier.mlmodel; sourceTree = "<group>"; };
 		F0DAFA382484E6DF00E1184C /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		F0DAFA392484E6DF00E1184C /* ListDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDataViewController.swift; sourceTree = "<group>"; };
-		F0DAFA3C2484ED5000E1184C /* List.Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = List.Screen.storyboard; sourceTree = "<group>"; };
 		FD0B1849CAC42DE80538D835 /* Pods_Litrack_MC2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Litrack_MC2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -160,7 +158,6 @@
 			children = (
 				F0DAFA392484E6DF00E1184C /* ListDataViewController.swift */,
 				CB40C2EE2475548200CE2D9E /* Chart.Screen.storyboard */,
-				F0DAFA3C2484ED5000E1184C /* List.Screen.storyboard */,
 				CB44DE1024778D3400F4B5C7 /* ManageInfoViewController.swift */,
 				CB44DE0E247702E900F4B5C7 /* ChartViewController.swift */,
 			);
@@ -350,7 +347,6 @@
 			files = (
 				CBE7A09D24744FD500868A22 /* Assets.xcassets in Resources */,
 				F05C5A8B24815D550069CB97 /* Camera.Screen.storyboard in Resources */,
-				F0DAFA3D2484ED5000E1184C /* List.Screen.storyboard in Resources */,
 				CB40C2EF2475548200CE2D9E /* Chart.Screen.storyboard in Resources */,
 				F042794A2482BC5E00CA355D /* LaunchScreen.storyboard in Resources */,
 				F04279402482A2E600CA355D /* littrack.gif in Resources */,

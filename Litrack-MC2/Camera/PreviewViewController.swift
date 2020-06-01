@@ -61,9 +61,9 @@ class PreviewViewController: UIViewController {
                }else if(firstResult.identifier.contains("Bottle")){
                    self.name = "Bottle"
                }else if(firstResult.identifier.contains ("Glass")){
-                   
-               }else{
-                  self.name = "No Waste"
+                   self.name = "Glass"
+               }else if(firstResult.identifier.contains ("Nowaste")){
+                  self.name = "Nowaste"
                }
              
                self.ResultPhoto.image = UIImage(named: self.name)
