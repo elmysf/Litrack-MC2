@@ -18,7 +18,10 @@ class ChartViewController: UIViewController {
     @IBOutlet weak var recycleSV: UIStackView!
     @IBOutlet weak var pieChartView: PieChartView!
     
-
+    
+    @IBOutlet weak var wasteUsageTotal: UILabel!
+    @IBOutlet weak var wasteUsageLabel: UILabel!
+    
 
     var wasteUsages = [PieChartDataEntry]()
     
@@ -32,7 +35,6 @@ class ChartViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
         
         //load data
         guard let wastes = CoreDataManager.shared.fetchWastes() else{ return }
@@ -44,7 +46,8 @@ class ChartViewController: UIViewController {
         let plasticWaste = PieChartDataEntry(value: Double(plastic ))
         let canWaste = PieChartDataEntry(value: Double(can ))
         let glassWaste = PieChartDataEntry(value:  Double(glass ) )
-        //nilai = PieChartDataEntry(value: wastes.)
+        
+        
         // View
         setupNavigationBar()
         setBackgroundImage()
@@ -64,6 +67,13 @@ class ChartViewController: UIViewController {
         canWaste.label = "Can"
         glassWaste.label = "Glass"
         
+        // Create text in the chart Hole
+        let textUsage: Int = Int(Double(wastes.count))
+        wasteUsageTotal.text = textUsage.description
+        wasteUsageTotal.textColor = .white
+        wasteUsageLabel.text = "Waste This Week"
+        wasteUsageLabel.textColor = .white
+        
         wasteUsages = [plasticWaste, canWaste, glassWaste]
         
         UpdateChartData()
@@ -71,10 +81,7 @@ class ChartViewController: UIViewController {
     
     // MARK: Create Chart
     func UpdateChartData(){
-        
-        
         let chartDataSet = PieChartDataSet(entries: wasteUsages, label: nil)
-        
         
         chartDataSet.drawIconsEnabled = false
         chartDataSet.sliceSpace = 2
