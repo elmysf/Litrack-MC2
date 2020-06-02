@@ -71,7 +71,7 @@ class ChartViewController: UIViewController {
         let textUsage: Int = Int(Double(wastes.count))
         wasteUsageTotal.text = textUsage.description
         wasteUsageTotal.textColor = .white
-        wasteUsageLabel.text = "Waste This Week"
+        wasteUsageLabel.text = "Total Waste"
         wasteUsageLabel.textColor = .white
         
         wasteUsages = [plasticWaste, canWaste, glassWaste]
