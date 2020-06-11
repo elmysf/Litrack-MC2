@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85D9CD7E249154CE006B327C /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85D9CD7D249154CE006B327C /* SpeechService.swift */; };
 		CB40C2EF2475548200CE2D9E /* Chart.Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB40C2EE2475548200CE2D9E /* Chart.Screen.storyboard */; };
 		CB44DE0F247702E900F4B5C7 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44DE0E247702E900F4B5C7 /* ChartViewController.swift */; };
 		CB44DE1124778D3400F4B5C7 /* ManageInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44DE1024778D3400F4B5C7 /* ManageInfoViewController.swift */; };
@@ -60,6 +61,7 @@
 		58DA90527750189758DD4CF9 /* Pods-Litrack-MC2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Litrack-MC2.debug.xcconfig"; path = "Target Support Files/Pods-Litrack-MC2/Pods-Litrack-MC2.debug.xcconfig"; sourceTree = "<group>"; };
 		63BAAD205670E2DB73033AA1 /* Pods_Litrack_MC2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Litrack_MC2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79ADACCEB8A1764428091392 /* Pods_Litrack_MC2_Litrack_MC2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Litrack_MC2_Litrack_MC2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85D9CD7D249154CE006B327C /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
 		B30C443B49991530735A64DC /* Pods-Litrack-MC2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Litrack-MC2.release.xcconfig"; path = "Target Support Files/Pods-Litrack-MC2/Pods-Litrack-MC2.release.xcconfig"; sourceTree = "<group>"; };
 		CB40C2EE2475548200CE2D9E /* Chart.Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chart.Screen.storyboard; sourceTree = "<group>"; };
 		CB44DE0E247702E900F4B5C7 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				F04279522482C02F00CA355D /* UIView+Constraints.swift */,
 				F04279542482C02F00CA355D /* ViewController.swift */,
 				F04F052F248A28C60082D3BE /* Main.storyboard */,
+				85D9CD7D249154CE006B327C /* SpeechService.swift */,
 				F042793F2482A2E600CA355D /* littrack.gif */,
 				F04279492482BC5E00CA355D /* LaunchScreen.storyboard */,
 				CBE7A09C24744FD500868A22 /* Assets.xcassets */,
@@ -484,6 +487,7 @@
 			files = (
 				F04279562482C02F00CA355D /* LogoAnimationView.swift in Sources */,
 				CBE7A09124744FD300868A22 /* AppDelegate.swift in Sources */,
+				85D9CD7E249154CE006B327C /* SpeechService.swift in Sources */,
 				F05C5A8824815D550069CB97 /* CameraController.swift in Sources */,
 				CBE7A09324744FD300868A22 /* SceneDelegate.swift in Sources */,
 				CBE7A09B24744FD300868A22 /* Litrack_MC2.xcdatamodeld in Sources */,

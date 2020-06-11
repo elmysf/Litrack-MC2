@@ -33,3 +33,8 @@ extension ViewController: SwiftyGifDelegate {
     }
 }
 
+  let speechService = SpeechService()
+
+     override func viewDidAppear(_ animated: Bool) {
+        let libraryBtn = "Library button to see all the saved photos"
+        SpeechService.say(_phrase: "")
