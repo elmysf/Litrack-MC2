@@ -82,15 +82,14 @@ class ChartViewController: UIViewController {
     // MARK: Create Chart
     func UpdateChartData(){
         let chartDataSet = PieChartDataSet(entries: wasteUsages, label: nil)
-        
         chartDataSet.drawIconsEnabled = false
-        chartDataSet.sliceSpace = 2
         
         let chartData = PieChartData(dataSet: chartDataSet)
         let format = NumberFormatter()
         format.numberStyle = .percent
         format.maximumFractionDigits = 1
         format.percentSymbol = " %"
+        format.zeroSymbol = ""
         let formatter = DefaultValueFormatter(formatter: format)
         chartData.setValueFormatter(formatter)
         
@@ -98,7 +97,31 @@ class ChartViewController: UIViewController {
         let colors = [UIColor(red:  208/255, green: 103/255, blue: 103/255, alpha: 1), UIColor(red: 59/255, green: 109/255, blue: 179/255, alpha: 1), UIColor(red: 234/255, green: 190/255, blue: 65/255, alpha: 1)]
         chartDataSet.colors = colors
         
+        let chartFont = UIFont.systemFont(ofSize: 18, weight: .light)
+        chartData.setValueFont(UIFontMetrics(forTextStyle: .body).scaledFont(for: chartFont))
+        chartData.setValueTextColor(.white)
+        
+        // Create Legend
+        let legendValue = pieChartView.legend
+        legendValue.horizontalAlignment = .center
+        legendValue.verticalAlignment = .bottom
+        legendValue.orientation = .vertical
+        legendValue.xEntrySpace = 7
+        legendValue.yEntrySpace = 0
+        legendValue.yOffset = 0
+        legendValue.formSize = 20
+        legendValue.font = UIFont.systemFont(ofSize: 20)
+        legendValue.textColor = .white
+        
+        
         pieChartView.data = chartData
+        pieChartView.drawEntryLabelsEnabled = false
+        pieChartView.drawCenterTextEnabled = true
+        pieChartView.setNeedsDisplay()
+        pieChartView.highlightValue(nil)
+        pieChartView.holeColor = .none
+        pieChartView.accessibilityActivate()
+        pieChartView.drawCenterTextEnabled = true
     }
     
     // setup navigation bar
