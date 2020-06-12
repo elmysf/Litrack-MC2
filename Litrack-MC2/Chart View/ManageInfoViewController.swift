@@ -19,13 +19,15 @@ class ManageInfoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-         overrideUserInterfaceStyle = .light
+        overrideUserInterfaceStyle = .light
     
         illustrationImage.image = detail.illustration
         descriptionText.text = detail.desc
         
         textViewDidChange(descriptionText)
-        descriptionText.font = UIFont.systemFont(ofSize: 16)
+       let textDecs = UIFont.systemFont(ofSize: 16)
+        descriptionText.font = UIFontMetrics(forTextStyle: .body).scaledFont(for: textDecs)
+        descriptionText.adjustsFontForContentSizeCategory = true
     }
     
     // setup line spacing in textview
