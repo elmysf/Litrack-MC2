@@ -10,6 +10,7 @@
 		CB40C2EF2475548200CE2D9E /* Chart.Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB40C2EE2475548200CE2D9E /* Chart.Screen.storyboard */; };
 		CB44DE0F247702E900F4B5C7 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44DE0E247702E900F4B5C7 /* ChartViewController.swift */; };
 		CB44DE1124778D3400F4B5C7 /* ManageInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44DE1024778D3400F4B5C7 /* ManageInfoViewController.swift */; };
+		CBB7EAEC24938AD9004D6F36 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7EAEB24938AD9004D6F36 /* OnboardingController.swift */; };
 		CBE7A09124744FD300868A22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7A09024744FD300868A22 /* AppDelegate.swift */; };
 		CBE7A09324744FD300868A22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7A09224744FD300868A22 /* SceneDelegate.swift */; };
 		CBE7A09824744FD300868A22 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE7A09624744FD300868A22 /* Onboarding.storyboard */; };
@@ -19,7 +20,6 @@
 		CBE7A0B624744FD500868A22 /* Litrack_MC2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7A0B524744FD500868A22 /* Litrack_MC2UITests.swift */; };
 		CC6EE1080731BE59DD06D3E5 /* Pods_Litrack_MC2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63BAAD205670E2DB73033AA1 /* Pods_Litrack_MC2Tests.framework */; };
 		F04279402482A2E600CA355D /* littrack.gif in Resources */ = {isa = PBXBuildFile; fileRef = F042793F2482A2E600CA355D /* littrack.gif */; };
-		F04279462482BAF500CA355D /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04279452482BAF500CA355D /* OnboardingController.swift */; };
 		F042794A2482BC5E00CA355D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F04279492482BC5E00CA355D /* LaunchScreen.storyboard */; };
 		F042794B2482BCFA00CA355D /* Pods_Litrack_MC2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD0B1849CAC42DE80538D835 /* Pods_Litrack_MC2.framework */; };
 		F04279552482C02F00CA355D /* UIView+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F04279522482C02F00CA355D /* UIView+Constraints.swift */; };
@@ -64,6 +64,7 @@
 		CB40C2EE2475548200CE2D9E /* Chart.Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chart.Screen.storyboard; sourceTree = "<group>"; };
 		CB44DE0E247702E900F4B5C7 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		CB44DE1024778D3400F4B5C7 /* ManageInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageInfoViewController.swift; sourceTree = "<group>"; };
+		CBB7EAEB24938AD9004D6F36 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		CBE7A08D24744FD300868A22 /* Litrack-MC2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Litrack-MC2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE7A09024744FD300868A22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBE7A09224744FD300868A22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,7 +79,6 @@
 		CBE7A0B524744FD500868A22 /* Litrack_MC2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Litrack_MC2UITests.swift; sourceTree = "<group>"; };
 		CBE7A0B724744FD500868A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F042793F2482A2E600CA355D /* littrack.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = littrack.gif; sourceTree = "<group>"; };
-		F04279452482BAF500CA355D /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		F04279492482BC5E00CA355D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F042794E2482BD4400CA355D /* SwiftyGif.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftyGif.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F04279522482C02F00CA355D /* UIView+Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Constraints.swift"; sourceTree = "<group>"; };
@@ -149,8 +149,8 @@
 		CB4E2EFD2481671A007207C1 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				F04279452482BAF500CA355D /* OnboardingController.swift */,
 				CBE7A09624744FD300868A22 /* Onboarding.storyboard */,
+				CBB7EAEB24938AD9004D6F36 /* OnboardingController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -492,9 +492,9 @@
 				F04279572482C02F00CA355D /* ViewController.swift in Sources */,
 				F0DAFA3A2484E6DF00E1184C /* CoreDataManager.swift in Sources */,
 				CB44DE1124778D3400F4B5C7 /* ManageInfoViewController.swift in Sources */,
+				CBB7EAEC24938AD9004D6F36 /* OnboardingController.swift in Sources */,
 				F08277F0248222D0006FA997 /* WasteClassifier.mlmodel in Sources */,
 				F04279552482C02F00CA355D /* UIView+Constraints.swift in Sources */,
-				F04279462482BAF500CA355D /* OnboardingController.swift in Sources */,
 				F05C5A8924815D550069CB97 /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
