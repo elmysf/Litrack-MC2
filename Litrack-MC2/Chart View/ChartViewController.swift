@@ -147,7 +147,7 @@ class ChartViewController: UIViewController {
         
     // setup manage Waste Title
     private func title(){
-        self.manageWasteTitle.text = "Manage Your Waste"
+        self.manageWasteTitle.text = "How to Manage Your Waste"
         self.manageWasteTitle.font = UIFont.systemFont(ofSize: 24)
         self.manageWasteTitle.textAlignment = .center
         self.manageWasteTitle.textColor = UIColor(red: 59/255, green: 126/255, blue: 115/255, alpha: 1)
