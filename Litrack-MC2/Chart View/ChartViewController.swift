@@ -17,6 +17,7 @@ class ChartViewController: UIViewController {
     @IBOutlet weak var reuseSV: UIStackView!
     @IBOutlet weak var recycleSV: UIStackView!
     @IBOutlet weak var pieChartView: PieChartView!
+//    @IBOutlet weak var cameraButton: UIBarButtonItem!
     
     
     @IBOutlet weak var wasteUsageTotal: UILabel!
@@ -34,8 +35,8 @@ class ChartViewController: UIViewController {
     ]
     
     override func viewDidAppear(_ animated: Bool) {
-        let welcomeChart = "chart screen welcoming user".localized
-              speechService.speaking(welcomeChart)
+        let welcome = "chart screen welcoming user".localized
+        speechService.speaking(welcome)
     }
     
     override func viewDidLoad() {

@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="115" translatesAutoresizingMaskIntoConstraints="NO" id="h0v-88-dz8">
-                                <rect key="frame" x="20" y="124" width="374" height="670"/>
+                                <rect key="frame" x="20" y="124" width="374" height="688"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koh-Re-7uo">
                                         <rect key="frame" x="59" y="0.0" width="256.5" height="80"/>
@@ -28,19 +28,19 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="9n1-0Q-qpT">
-                                        <rect key="frame" x="30" y="195" width="314" height="300"/>
+                                        <rect key="frame" x="30" y="195" width="314" height="318"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="xeJ-Ve-onj">
-                                                <rect key="frame" x="0.0" y="0.0" width="314" height="80"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="314" height="86"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Onboarding 1st Icon" translatesAutoresizingMaskIntoConstraints="NO" id="ZEC-Cu-EBU">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="86"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="V5W-uF-23F"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add your waste with the camera feature" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Tl-bx-T7h">
-                                                        <rect key="frame" x="100" y="16" width="214" height="48"/>
+                                                        <rect key="frame" x="100" y="19" width="214" height="48"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -48,16 +48,16 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="FJX-nd-9Ln">
-                                                <rect key="frame" x="0.0" y="110" width="314" height="80"/>
+                                                <rect key="frame" x="0.0" y="116" width="314" height="86"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Onboarding 2nd Icon" translatesAutoresizingMaskIntoConstraints="NO" id="koB-Lk-Hvi">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="86"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="NoN-V9-6zz"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get data and track your waste production" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PYO-gG-8BO">
-                                                        <rect key="frame" x="100" y="16" width="214" height="48"/>
+                                                        <rect key="frame" x="100" y="19" width="214" height="48"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -69,16 +69,16 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="szc-Up-78V">
-                                                <rect key="frame" x="0.0" y="220" width="314" height="80"/>
+                                                <rect key="frame" x="0.0" y="232" width="314" height="86"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Onboarding 3rd Icon" translatesAutoresizingMaskIntoConstraints="NO" id="blB-3e-6pd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="80" height="86"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" constant="80" id="Gkr-T4-ejG"/>
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get tips on how to reduce and recycle it" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lOB-fy-hXF">
-                                                        <rect key="frame" x="100" y="16" width="214" height="48"/>
+                                                        <rect key="frame" x="100" y="19" width="214" height="48"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -100,7 +100,7 @@
                                         </constraints>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xf5-3q-zHc">
-                                        <rect key="frame" x="20" y="610" width="334" height="60"/>
+                                        <rect key="frame" x="20" y="628" width="334" height="60"/>
                                         <color key="backgroundColor" red="0.23137254900000001" green="0.4941176471" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="1RD-SM-xyw"/>
@@ -110,7 +110,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Oc9-Nu-4O6" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="Zft-xV-mb7"/>
+                                            <segue destination="Oc9-Nu-4O6" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="C44-OJ-eDR"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -150,6 +150,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FrU-46-sXC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="756" y="200"/>
+        </scene>
+        <!--Chart.Screen-->
+        <scene sceneID="aGD-so-4gL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Chart.Screen" id="Xhf-Yr-faG" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VJ1-Tc-gNy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="745" y="271"/>
         </scene>
     </scenes>
     <resources>
