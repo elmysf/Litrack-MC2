@@ -11,10 +11,11 @@ import AVFoundation
 
 class CameraController: UIViewController, UIImagePickerControllerDelegate & UINavigationControllerDelegate {
 
-    @IBOutlet weak var cameraButton: UIButton!
-    @IBOutlet weak var LibraryBtn: UIButton!
-    @IBOutlet weak var FlashBtn: UIButton!
+        @IBOutlet weak var cameraButton: UIButton!
+        @IBOutlet weak var LibraryBtn: UIButton!
+        @IBOutlet weak var FlashBtn: UIButton!
     
+        let speechService = SpeechService()
     
          var captureSession = AVCaptureSession()
          var backCamera: AVCaptureDevice?
@@ -57,6 +58,10 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
                  styleCaptureButton()
              }
              
+    override func viewDidAppear(_ animated: Bool) {
+        let cameraVoiceOver = "add your waste".localized
+        speechService.speaking(cameraVoiceOver)
+    }
              
              func styleCaptureButton() {
                  cameraButton.layer.borderColor = UIColor.white.cgColor

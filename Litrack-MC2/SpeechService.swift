@@ -15,9 +15,9 @@ class SpeechService{
     
     func speaking(_ phrase: String){
         
-//        guard UIAccessibility.isVoiceOverRunning else {
-//            return
-//        }
+        guard UIAccessibility.isVoiceOverRunning else {
+            return
+        }
         
         let utterance = AVSpeechUtterance(string: phrase)
         let languageCode = "en-EN".localized

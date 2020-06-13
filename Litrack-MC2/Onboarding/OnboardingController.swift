@@ -18,7 +18,9 @@ class OnboardingController: UIViewController {
 //     @IBOutlet weak var label2: UILabel!
 //     @IBOutlet weak var image3: UIImageView!
 //     @IBOutlet weak var label3: UILabel!
-//
+    
+    let speechService = SpeechService()
+    
      override func viewDidLoad() {
          super.viewDidLoad()
         
@@ -52,8 +54,10 @@ class OnboardingController: UIViewController {
 //      self.getStarted.titleLabel?.font = UIFontMetrics(forTextStyle: .subheadline).scaledFont(for: fontButton)
         self.getStarted.layer.cornerRadius = 10
 //  self.getStarted.adjustsImageSizeForAccessibilityContentSizeCategory = true
-//             }
-
-
          }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let welcomeOnboarding = "welcome onboarding".localized
+        speechService.speaking(welcomeOnboarding)
+    }
 }
