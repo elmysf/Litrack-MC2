@@ -133,8 +133,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="getStartedButton" destination="xf5-3q-zHc" id="Lj5-PE-4fS"/>
-                        <outlet property="onboarding1" destination="0Tl-bx-T7h" id="cHx-Ta-uY7"/>
+                        <outlet property="getStarted" destination="xf5-3q-zHc" id="zqX-aS-0Wj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

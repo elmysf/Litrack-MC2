@@ -17,7 +17,6 @@ class ChartViewController: UIViewController {
     @IBOutlet weak var reuseSV: UIStackView!
     @IBOutlet weak var recycleSV: UIStackView!
     @IBOutlet weak var pieChartView: PieChartView!
-//    @IBOutlet weak var cameraButton: UIBarButtonItem!
     
     
     @IBOutlet weak var wasteUsageTotal: UILabel!
