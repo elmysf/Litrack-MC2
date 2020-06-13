@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "Add your waste with the camera feature"; ObjectID = "0Tl-bx-T7h"; */
+"0Tl-bx-T7h.text" = "Add your waste with the camera feature";
+
+/* Class = "UILabel"; text = "Get data and track your waste production"; ObjectID = "PYO-gG-8BO"; */
+"PYO-gG-8BO.text" = "Get data and track your waste production";
+
+/* Class = "UILabel"; text = "Welcome"; ObjectID = "koh-Re-7uo"; */
+"koh-Re-7uo.text" = "Welcome";
+
+/* Class = "UILabel"; text = "Get tips on how to reduce and recycle it"; ObjectID = "lOB-fy-hXF"; */
+"lOB-fy-hXF.text" = "Get tips on how to reduce and recycle it";
+
+/* Class = "UIButton"; normalTitle = "Get Started"; ObjectID = "xf5-3q-zHc"; */
+"xf5-3q-zHc.normalTitle" = "Get Started";

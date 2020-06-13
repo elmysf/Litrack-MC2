@@ -11,11 +11,14 @@ import UIKit
 class OnboardingController: UIViewController {
 
     @IBOutlet weak var getStartedButton: UIButton!
+    @IBOutlet weak var onboarding1: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         getStartedButton.layer.cornerRadius = 10
+        
+        
     }
     
 }

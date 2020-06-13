@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Litrack-MC2
+
+  Created by Karina Widyastuti on 13/06/20.
+  Copyright © 2020 Karina Widyastuti. All rights reserved.
+*/
+
+"en-En" = "en-EN";
+
+"chart screen welcoming user" = "You have been added your waste. In this Chart you can track your wastes usage and get some tips to manage your waste. To add more waste, please tap on camera icon in the top right button. To get some tips to manage your waste tap icon Reduce, Reuse or Recycle in the bottom of screen";

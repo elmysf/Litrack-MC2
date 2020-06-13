@@ -1,0 +1,21 @@
+
+/* Class = "UIBarButtonItem"; title = "List"; ObjectID = "7Cb-Lw-EUB"; */
+"7Cb-Lw-EUB.title" = "List";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "M2F-FF-eZP"; */
+"M2F-FF-eZP.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "SdU-S9-Fub"; */
+"SdU-S9-Fub.title" = "Item";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "TsD-CU-LrW"; */
+"TsD-CU-LrW.text" = "Label";
+
+/* Class = "UILabel"; text = "Waste History"; ObjectID = "aQc-jj-vUs"; */
+"aQc-jj-vUs.text" = "Waste History";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "iPc-ws-kif"; */
+"iPc-ws-kif.title" = "Title";
+
+/* Class = "UIBarButtonItem"; title = "Manage Waste"; ObjectID = "v6f-m6-cf0"; */
+"v6f-m6-cf0.title" = "Manage Waste";

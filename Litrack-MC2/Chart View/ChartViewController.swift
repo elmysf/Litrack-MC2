@@ -22,7 +22,7 @@ class ChartViewController: UIViewController {
     @IBOutlet weak var wasteUsageTotal: UILabel!
     @IBOutlet weak var wasteUsageLabel: UILabel!
     
-
+    let speechService = SpeechService()
     var wasteUsages = [PieChartDataEntry]()
     
     // Manage Waste Information in ManageViewController
@@ -32,6 +32,11 @@ class ChartViewController: UIViewController {
         (UIImage(named: "illustrationRecycle"), "\nRecycling is changing old products into new ones so they can be resold. Items that might otherwise be considered trash turned into a useful new product.\n\nSome tips for recycling:\n•     Buy products that can be recycled such as glass jars. Avoid buying hazardous materials that could pose difficulty for you to recycle.\n•     Buy products that have been made from recycled material. These products are no different from standard goods; they’re just helping to make the most of valuable resources.\n\nHere are some ideas you can do to recycle your wastes:\n\nFor plastic bottles you can turn it into supply cups, planter, piggy bank, pencil/marker organiser, or even a vertical garden.\n\nYou can turn soda or tin cans into a decorative flower vase, utensils and cutlery holders.\n\nYou can also recycle glass bottles and jars into home decorations or homemade hanging storage for your kitchen."),
         (UIImage(named: "illustrationRecycle"), "ipsum")
     ]
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let welcomeChart = "chart screen welcoming user".localized
+              speechService.speaking(welcomeChart)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -77,6 +82,8 @@ class ChartViewController: UIViewController {
         wasteUsages = [plasticWaste, canWaste, glassWaste]
         
         UpdateChartData()
+        
+      
     }
     
     // MARK: Create Chart

@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB40C2EF2475548200CE2D9E /* Chart.Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB40C2EE2475548200CE2D9E /* Chart.Screen.storyboard */; };
 		CB44DE0F247702E900F4B5C7 /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44DE0E247702E900F4B5C7 /* ChartViewController.swift */; };
 		CB44DE1124778D3400F4B5C7 /* ManageInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB44DE1024778D3400F4B5C7 /* ManageInfoViewController.swift */; };
 		CBB7EAEC24938AD9004D6F36 /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7EAEB24938AD9004D6F36 /* OnboardingController.swift */; };
+		CBB7EAEE249484A5004D6F36 /* SpeechService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBB7EAED249484A5004D6F36 /* SpeechService.swift */; };
+		CBB7EAF124948EE9004D6F36 /* Chart.Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBB7EAF324948EE9004D6F36 /* Chart.Screen.storyboard */; };
+		CBB7EAFC249490F8004D6F36 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = CBB7EAFE249490F8004D6F36 /* Localizable.strings */; };
 		CBE7A09124744FD300868A22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7A09024744FD300868A22 /* AppDelegate.swift */; };
 		CBE7A09324744FD300868A22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE7A09224744FD300868A22 /* SceneDelegate.swift */; };
 		CBE7A09824744FD300868A22 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBE7A09624744FD300868A22 /* Onboarding.storyboard */; };
@@ -61,10 +63,13 @@
 		63BAAD205670E2DB73033AA1 /* Pods_Litrack_MC2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Litrack_MC2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		79ADACCEB8A1764428091392 /* Pods_Litrack_MC2_Litrack_MC2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Litrack_MC2_Litrack_MC2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30C443B49991530735A64DC /* Pods-Litrack-MC2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Litrack-MC2.release.xcconfig"; path = "Target Support Files/Pods-Litrack-MC2/Pods-Litrack-MC2.release.xcconfig"; sourceTree = "<group>"; };
-		CB40C2EE2475548200CE2D9E /* Chart.Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Chart.Screen.storyboard; sourceTree = "<group>"; };
 		CB44DE0E247702E900F4B5C7 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		CB44DE1024778D3400F4B5C7 /* ManageInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageInfoViewController.swift; sourceTree = "<group>"; };
 		CBB7EAEB24938AD9004D6F36 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
+		CBB7EAED249484A5004D6F36 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
+		CBB7EAF224948EE9004D6F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Chart.Screen.storyboard; sourceTree = "<group>"; };
+		CBB7EAFD249490F8004D6F36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		CBB7EB01249491A4004D6F36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Chart.Screen.strings; sourceTree = "<group>"; };
 		CBE7A08D24744FD300868A22 /* Litrack-MC2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Litrack-MC2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE7A09024744FD300868A22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBE7A09224744FD300868A22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -159,7 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				F0DAFA392484E6DF00E1184C /* ListDataViewController.swift */,
-				CB40C2EE2475548200CE2D9E /* Chart.Screen.storyboard */,
+				CBB7EAF324948EE9004D6F36 /* Chart.Screen.storyboard */,
 				CB44DE1024778D3400F4B5C7 /* ManageInfoViewController.swift */,
 				CB44DE0E247702E900F4B5C7 /* ChartViewController.swift */,
 			);
@@ -169,6 +174,7 @@
 		CBE7A08424744FD200868A22 = {
 			isa = PBXGroup;
 			children = (
+				CBB7EAFE249490F8004D6F36 /* Localizable.strings */,
 				CBE7A08F24744FD300868A22 /* Litrack-MC2 */,
 				CBE7A0A924744FD500868A22 /* Litrack-MC2Tests */,
 				CBE7A0B424744FD500868A22 /* Litrack-MC2UITests */,
@@ -195,6 +201,7 @@
 				CB4E2EFD2481671A007207C1 /* Onboarding */,
 				F05C5A8224815D550069CB97 /* Camera */,
 				CBE7A09024744FD300868A22 /* AppDelegate.swift */,
+				CBB7EAED249484A5004D6F36 /* SpeechService.swift */,
 				CBE7A09224744FD300868A22 /* SceneDelegate.swift */,
 				F04279532482C02F00CA355D /* LogoAnimationView.swift */,
 				F04279522482C02F00CA355D /* UIView+Constraints.swift */,
@@ -350,9 +357,10 @@
 			files = (
 				CBE7A09D24744FD500868A22 /* Assets.xcassets in Resources */,
 				F05C5A8B24815D550069CB97 /* Camera.Screen.storyboard in Resources */,
-				CB40C2EF2475548200CE2D9E /* Chart.Screen.storyboard in Resources */,
+				CBB7EAF124948EE9004D6F36 /* Chart.Screen.storyboard in Resources */,
 				F042794A2482BC5E00CA355D /* LaunchScreen.storyboard in Resources */,
 				F04F0530248A28C70082D3BE /* Main.storyboard in Resources */,
+				CBB7EAFC249490F8004D6F36 /* Localizable.strings in Resources */,
 				F04279402482A2E600CA355D /* littrack.gif in Resources */,
 				CBE7A09824744FD300868A22 /* Onboarding.storyboard in Resources */,
 			);
@@ -484,6 +492,7 @@
 			files = (
 				F04279562482C02F00CA355D /* LogoAnimationView.swift in Sources */,
 				CBE7A09124744FD300868A22 /* AppDelegate.swift in Sources */,
+				CBB7EAEE249484A5004D6F36 /* SpeechService.swift in Sources */,
 				F05C5A8824815D550069CB97 /* CameraController.swift in Sources */,
 				CBE7A09324744FD300868A22 /* SceneDelegate.swift in Sources */,
 				CBE7A09B24744FD300868A22 /* Litrack_MC2.xcdatamodeld in Sources */,
@@ -531,6 +540,23 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		CBB7EAF324948EE9004D6F36 /* Chart.Screen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBB7EAF224948EE9004D6F36 /* Base */,
+				CBB7EB01249491A4004D6F36 /* en */,
+			);
+			name = Chart.Screen.storyboard;
+			sourceTree = "<group>";
+		};
+		CBB7EAFE249490F8004D6F36 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBB7EAFD249490F8004D6F36 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		CBE7A09624744FD300868A22 /* Onboarding.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -554,6 +580,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -614,6 +641,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
