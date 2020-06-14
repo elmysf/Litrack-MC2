@@ -12,5 +12,6 @@
 
 "chart screen welcoming user" = "In this screen, you can track your wastes usage and get some tips to manage your waste. To add more waste, please tap on camera icon in the top right button. To get some tips to manage your waste tap icon Reduce, Reuse or Recycle in the bottom of screen";
 
-"Add your waste" = "Point camera to your waste. Click circle button to capture your waste. To track your waste usage and get info how to manage your waste, click on manage waste icon in the right buttom";
+"Add your waste" = "Point camera to your waste. Click circle button to capture your waste. To track your waste usage and get info how to manage your waste, click on manage waste icon in the buttom right";
 
+"preview" = "Click Add Waste if you want to add your waste to your waste usage tracking. Click Retake waste if you want to retake the waste";

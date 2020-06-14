@@ -17,6 +17,8 @@ class PreviewViewController: UIViewController {
    var image:UIImage!
    var name:String!
    
+    let speechService = SpeechService()
+    
    override func viewDidLoad() {
        super.viewDidLoad()
        photoView.image = image
@@ -25,10 +27,17 @@ class PreviewViewController: UIViewController {
        view.showLoadingView(inView: view)
        name = "nodata"
    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        let voiceOver = "You added," + String(name) + "preview".localized
+        speechService.speaking(voiceOver)
+    }
    
    
    @IBAction func cancelButton(_ sender: Any) {
        dismiss(animated: true, completion: nil)
+    
+    
    }
    @IBAction func saveButton(_ sender: Any) {
        guard let imageToSave = image else {

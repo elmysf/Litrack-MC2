@@ -78,6 +78,7 @@ class ChartViewController: UIViewController {
         wasteUsageTotal.text = textUsage.description
         wasteUsageTotal.textColor = .white
         
+        // add voice over of total waste
         let wasteUsageText = String(textUsage)
         wasteUsage.text = wasteUsageText
         wasteUsage.accessibilityValue = wasteUsage.text
