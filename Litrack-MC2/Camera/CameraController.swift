@@ -59,7 +59,7 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
              }
              
     override func viewDidAppear(_ animated: Bool) {
-        let cameraVoiceOver = "add your waste".localized
+        let cameraVoiceOver = "Add your waste".localized
         speechService.speaking(cameraVoiceOver)
     }
              

@@ -29,15 +29,13 @@ class PreviewViewController: UIViewController {
    }
     
     override func viewDidAppear(_ animated: Bool) {
-        let voiceOver = "You added," + String(name) + "preview".localized
+        let voiceOver = "You added," + name + "preview".localized
         speechService.speaking(voiceOver)
     }
    
    
    @IBAction func cancelButton(_ sender: Any) {
        dismiss(animated: true, completion: nil)
-    
-    
    }
    @IBAction func saveButton(_ sender: Any) {
        guard let imageToSave = image else {
