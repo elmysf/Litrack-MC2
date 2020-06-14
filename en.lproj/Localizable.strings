@@ -10,8 +10,7 @@
 
 "welcome onboarding" = "Welcome to Litrack App. Add your waste with the camera feature. Get data and track your waste production. Get tips on how to reduce and recycle it. Okay now let's get started by tap on get started button";
 
-"chart screen welcoming user" = "You have been added your waste. In this Chart you can track your wastes usage and get some tips to manage your waste. To add more waste, please tap on camera icon in the top right button. To get some tips to manage your waste tap icon Reduce, Reuse or Recycle in the bottom of screen";
+"chart screen welcoming user" = "In this screen, you can track your wastes usage and get some tips to manage your waste. To add more waste, please tap on camera icon in the top right button. To get some tips to manage your waste tap icon Reduce, Reuse or Recycle in the bottom of screen";
 
-"Add your waste" = "Point camera to your waste. Click circle button to capture your waste.";
+"Add your waste" = "Point camera to your waste. Click circle button to capture your waste. To track your waste usage and get info how to manage your waste, click on manage waste icon in the right buttom";
 
-"manage info" = "";

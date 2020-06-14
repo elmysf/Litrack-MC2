@@ -23,6 +23,7 @@ class ChartViewController: UIViewController {
     @IBOutlet weak var wasteUsageLabel: UILabel!
     
     let speechService = SpeechService()
+    let wasteUsage = UILabel()
     var wasteUsages = [PieChartDataEntry]()
     
     // Manage Waste Information in ManageViewController
@@ -76,14 +77,19 @@ class ChartViewController: UIViewController {
         let textUsage: Int = Int(Double(wastes.count))
         wasteUsageTotal.text = textUsage.description
         wasteUsageTotal.textColor = .white
+        
+        let wasteUsageText = String(textUsage)
+        wasteUsage.text = wasteUsageText
+        wasteUsage.accessibilityValue = wasteUsage.text
+        speechService.speaking("You have been added," + wasteUsageText + "wastes")
+        
+        
         wasteUsageLabel.text = "Total Waste"
         wasteUsageLabel.textColor = .white
         
         wasteUsages = [plasticWaste, canWaste, glassWaste]
         
         UpdateChartData()
-        
-      
     }
     
     // MARK: Create Chart

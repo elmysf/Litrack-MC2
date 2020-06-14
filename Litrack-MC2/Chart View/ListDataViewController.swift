@@ -16,6 +16,9 @@ class ListDataViewController: UIViewController {
     var fetchedResultsController: NSFetchedResultsController<Waste>!
     let viewContext = CoreDataManager.shared.persistentContainer.viewContext
     
+    override func viewDidAppear(_ animated: Bool) {
+        
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
