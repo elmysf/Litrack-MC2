@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import SwiftyGif
 
 class OnboardingController: UIViewController {
      
+    let logoAnimationView = LogoAnimationView()
 //     @IBOutlet weak var welcome: UILabel!
      @IBOutlet weak var getStarted: UIButton!
 //     @IBOutlet weak var image1: UIImageView!
@@ -23,6 +25,12 @@ class OnboardingController: UIViewController {
     
      override func viewDidLoad() {
          super.viewDidLoad()
+             view.addSubview(logoAnimationView)
+             logoAnimationView.pinEdgesToSuperView()
+             logoAnimationView.logoGifImageView.delegate = self
+             self.getStarted.layer.cornerRadius = 10
+         }
+
         
         // setup welcome
 //      let fontWelcome = UIFont.boldSystemFont(ofSize: 60)
@@ -52,12 +60,18 @@ class OnboardingController: UIViewController {
 //      self.getStarted.backgroundColor = UIColor(red: 59/255, green: 126/255, blue: 115/255, alpha: 1)
 //      self.getStarted.setTitleColor(.white, for: .normal)
 //      self.getStarted.titleLabel?.font = UIFontMetrics(forTextStyle: .subheadline).scaledFont(for: fontButton)
-        self.getStarted.layer.cornerRadius = 10
+
 //  self.getStarted.adjustsImageSizeForAccessibilityContentSizeCategory = true
-         }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        logoAnimationView.logoGifImageView.startAnimatingGif()
         let welcomeOnboarding = "welcome onboarding".localized
         speechService.speaking(welcomeOnboarding)
+    }
+}
+extension OnboardingController: SwiftyGifDelegate {
+    func gifDidStop(sender: UIImageView) {
+        logoAnimationView.isHidden = true
     }
 }

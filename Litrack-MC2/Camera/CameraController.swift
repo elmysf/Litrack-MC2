@@ -13,7 +13,6 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
 
         @IBOutlet weak var cameraButton: UIButton!
         @IBOutlet weak var LibraryBtn: UIButton!
-        @IBOutlet weak var FlashBtn: UIButton!
     
         let speechService = SpeechService()
     
