@@ -24,6 +24,9 @@ class ChartViewController: UIViewController {
     
     let speechService = SpeechService()
     let wasteUsage = UILabel()
+    let plasticSay = UILabel()
+    let canSay = UILabel()
+    let glassSay = UILabel()
     var wasteUsages = [PieChartDataEntry]()
     
     // Manage Waste Information in ManageViewController
@@ -78,11 +81,31 @@ class ChartViewController: UIViewController {
         wasteUsageTotal.text = textUsage.description
         wasteUsageTotal.textColor = .white
         
+        
         // add voice over of total waste
         let wasteUsageText = String(textUsage)
         wasteUsage.text = wasteUsageText
         wasteUsage.accessibilityValue = wasteUsage.text
         speechService.speaking("You have been added," + wasteUsageText + "wastes")
+        
+        let plasticTotal: Int = Int(Double(wastes.filter{$0.name == "Plastic"}.count))
+        let plasticVO = String(plasticTotal)
+        plasticSay.text = plasticVO
+        plasticSay.accessibilityValue = plasticSay.text
+        speechService.speaking("\(plasticVO) plastic.")
+        
+        let canTotal: Int = Int(Double(wastes.filter{$0.name == "Can"}.count))
+        let canVO = String(canTotal)
+        canSay.text = canVO
+        canSay.accessibilityValue = canSay.text
+        speechService.speaking("\(canVO) can.")
+        
+        let glassTotal: Int = Int(Double(wastes.filter{$0.name == "Glass"}.count))
+        let glassVO = String(glassTotal)
+        glassSay.text = glassVO
+        glassSay.accessibilityValue = glassSay.text
+        speechService.speaking("\(glassVO) glass.")
+        
         
         
         wasteUsageLabel.text = "Total Waste"

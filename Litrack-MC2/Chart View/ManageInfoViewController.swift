@@ -27,7 +27,7 @@ class ManageInfoViewController: UIViewController {
         descriptionText.text = detail.desc
         
         textViewDidChange(descriptionText)
-       let textDecs = UIFont.systemFont(ofSize: 16)
+        let textDecs = UIFont.systemFont(ofSize: 16)
         descriptionText.font = UIFontMetrics(forTextStyle: .body).scaledFont(for: textDecs)
         descriptionText.adjustsFontForContentSizeCategory = true
     }
