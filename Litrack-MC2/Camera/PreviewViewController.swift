@@ -29,7 +29,7 @@ class PreviewViewController: UIViewController {
    }
     
     override func viewDidAppear(_ animated: Bool) {
-        let voiceOver = "You added," + name + "preview".localized
+        let voiceOver = "You add" + name + ".\n" + "preview".localized
         speechService.speaking(voiceOver)
     }
    

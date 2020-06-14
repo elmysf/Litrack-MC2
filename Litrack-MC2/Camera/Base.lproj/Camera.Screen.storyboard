@@ -115,7 +115,7 @@
                                         <rect key="frame" x="18" y="8" width="284" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tue-mu-RXE">
-                                                <rect key="frame" x="0.0" y="0.0" width="89" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="84" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="F5V-dw-WQF"/>
                                                 </constraints>
@@ -128,12 +128,12 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAq-P7-zYz">
-                                                <rect key="frame" x="189" y="0.0" width="95" height="30"/>
+                                                <rect key="frame" x="184" y="0.0" width="100" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="c2R-rR-obk"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                <state key="normal" title="Use Photo">
+                                                <state key="normal" title="Add Waste">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
