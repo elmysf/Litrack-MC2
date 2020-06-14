@@ -15,6 +15,7 @@ class ManageInfoViewController: UIViewController {
     @IBOutlet weak var descriptionText: UITextView!
     
     var detail: (illustration: UIImage?, desc: String?)
+    
     let speechService = SpeechService()
     
     override func viewDidLoad() {
@@ -32,9 +33,10 @@ class ManageInfoViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        let manageInfoVoiceOver = "manage info".localized
+        let manageInfoVoiceOver = String(detail.desc ?? descriptionText.text)
         speechService.speaking(manageInfoVoiceOver)
     }
+    
     
     // setup line spacing in textview
     func textViewDidChange(_ textView: UITextView) {

@@ -184,6 +184,7 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
     @IBAction func cameraButton(_ sender: Any) {
         let settings = AVCapturePhotoSettings()
                self.photoOutput?.capturePhoto(with: settings, delegate: self)
+        
            }
            
            override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

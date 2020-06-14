@@ -110,7 +110,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <segue destination="Oc9-Nu-4O6" kind="presentation" animates="NO" modalPresentationStyle="fullScreen" id="C44-OJ-eDR"/>
+                                            <segue destination="Xhf-Yr-faG" kind="presentation" id="8gy-Gb-zPU"/>
                                         </connections>
                                     </button>
                                 </subviews>
