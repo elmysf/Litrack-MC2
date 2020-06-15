@@ -113,6 +113,8 @@ class ChartViewController: UIViewController {
         glassSay.accessibilityValue = glassSay.text
         speechService.speaking("\(glassVO) glass.")
         
+        accessibilityActivate()
+        
     }
     
     // MARK: Create Chart

@@ -29,6 +29,7 @@ class OnboardingController: UIViewController {
              logoAnimationView.pinEdgesToSuperView()
              logoAnimationView.logoGifImageView.delegate = self
              self.getStarted.layer.cornerRadius = 10
+            accessibilityActivate()
          }
 
         

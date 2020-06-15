@@ -26,6 +26,8 @@ class PreviewViewController: UIViewController {
        detectPhoto(image: photoView.image!)
        view.showLoadingView(inView: view)
        name = "nodata"
+    
+        accessibilityActivate()
    }
     
     // add voice over

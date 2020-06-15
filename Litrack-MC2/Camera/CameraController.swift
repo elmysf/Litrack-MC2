@@ -55,6 +55,8 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
                  zoomOutGestureRecognizer.addTarget(self, action: #selector(zoomOut))
                  view.addGestureRecognizer(zoomOutGestureRecognizer)
                  styleCaptureButton()
+            
+                 accessibilityActivate()
              }
              
     // add voice over
