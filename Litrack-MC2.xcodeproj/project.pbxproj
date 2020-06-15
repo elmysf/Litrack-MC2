@@ -63,6 +63,7 @@
 		B30C443B49991530735A64DC /* Pods-Litrack-MC2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Litrack-MC2.release.xcconfig"; path = "Target Support Files/Pods-Litrack-MC2/Pods-Litrack-MC2.release.xcconfig"; sourceTree = "<group>"; };
 		CB44DE0E247702E900F4B5C7 /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 		CB44DE1024778D3400F4B5C7 /* ManageInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageInfoViewController.swift; sourceTree = "<group>"; };
+		CBAAA65E24975EEF00B777A1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Camera.Screen.strings; sourceTree = "<group>"; };
 		CBB7EAEB24938AD9004D6F36 /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		CBB7EAED249484A5004D6F36 /* SpeechService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechService.swift; sourceTree = "<group>"; };
 		CBB7EAF224948EE9004D6F36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Chart.Screen.storyboard; sourceTree = "<group>"; };
@@ -561,6 +562,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				F05C5A8724815D550069CB97 /* Base */,
+				CBAAA65E24975EEF00B777A1 /* en */,
 			);
 			name = Camera.Screen.storyboard;
 			sourceTree = "<group>";

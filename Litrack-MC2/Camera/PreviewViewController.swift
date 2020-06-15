@@ -45,7 +45,15 @@ class PreviewViewController: UIViewController {
        print("Created \(newData)")
        
        UIImageWriteToSavedPhotosAlbum(imageToSave, nil, nil, nil)
-       dismiss(animated: true, completion: nil)
+//       dismiss(animated: true, completion: nil)
+    
+        func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Go Show" {
+            let chartViewController = segue.destination as! ChartViewController
+            chartViewController.navigationItem.leftItemsSupplementBackButton = false
+            }
+        }
+    
    }
    func detectPhoto(image: UIImage) {
        //load coreml model

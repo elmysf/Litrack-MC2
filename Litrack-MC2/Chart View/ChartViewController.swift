@@ -288,7 +288,13 @@ class ChartViewController: UIViewController {
     }
     
    @objc func back(){
-        dismiss(animated: true, completion: nil)
+//        dismiss(animated: true, completion: nil)
+    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "Back to Camera" {
+            let cameraScreen = segue.destination as! CameraController
+            cameraScreen.navigationItem.leftItemsSupplementBackButton = false
+            }
+        }
     }
 
 }

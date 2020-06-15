@@ -5,13 +5,13 @@
   Created by Karina Widyastuti on 13/06/20.
   Copyright © 2020 Karina Widyastuti. All rights reserved.
 */
-
+//
 "en-En" = "en-EN";
 
-"welcome onboarding" = "Welcome to Litrack Application. \nAdd your waste with the camera feature. \nGet data and track your waste production. \nGet tips on how to reduce and recycle it. \nOkay now let's get started by tap on get started button";
+"welcome onboarding" = "Welcome to Litrack. \nThe application that helps you control your waste usage. \nYou can add your waste by using camera feature and then get data of how much waste you've been using daily. \nYou can also get some tips on how to reduce and recycle it. \nTo get started please tap the green button on the bottom of the screen";
 
 "chart screen welcoming user" = "In this screen, you can track your wastes usage and get some tips to manage your waste. \nTo add more waste, please tap on camera icon in the top right button. \nTo get some tips to manage your waste tap icon Reduce, Reuse or Recycle in the bottom of screen";
 
-"Add your waste" = "Point camera to your waste. \nClick circle button to capture your waste. \nTo track your waste usage and get info how to manage it click on manage waste icon in the buttom right";
+"Add your waste" = "Point camera to your waste. \nClick button in the bottom middle to capture your waste. \nTo track your waste usage and get info how to manage it click on manage waste icon in the bottom right";
 
-"preview" = "\nClick Add Waste if you want to add your waste. \nClick Retake if you want to retake the waste";
+"preview" = "\nClick Add Waste in the bottom right if you want to add your waste. \nClick Retake in the bottom left if you want to retake the waste";
