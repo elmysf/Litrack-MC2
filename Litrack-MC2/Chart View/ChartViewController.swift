@@ -83,6 +83,7 @@ class ChartViewController: UIViewController {
         
         wasteUsageLabel.text = "Total Waste"
         wasteUsageLabel.textColor = .white
+        wasteUsageLabel.accessibilityActivate()
                
         wasteUsages = [plasticWaste, canWaste, glassWaste]
                
