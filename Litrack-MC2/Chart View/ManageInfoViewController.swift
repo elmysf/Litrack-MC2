@@ -32,6 +32,7 @@ class ManageInfoViewController: UIViewController {
         descriptionText.adjustsFontForContentSizeCategory = true
     }
     
+    // add voice over
     override func viewDidAppear(_ animated: Bool) {
         let manageInfoVoiceOver = String(detail.desc ?? descriptionText.text)
         speechService.speaking(manageInfoVoiceOver)

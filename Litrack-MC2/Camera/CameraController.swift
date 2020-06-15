@@ -57,6 +57,7 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
                  styleCaptureButton()
              }
              
+    // add voice over
     override func viewDidAppear(_ animated: Bool) {
         let cameraVoiceOver = "Add your waste".localized
         speechService.speaking(cameraVoiceOver)

@@ -37,6 +37,7 @@ class ChartViewController: UIViewController {
         (UIImage(named: "illustrationRecycle"), "ipsum")
     ]
     
+    // add voice over
     override func viewDidAppear(_ animated: Bool) {
         let welcome = "chart screen welcoming user".localized
         speechService.speaking(welcome)
@@ -82,7 +83,7 @@ class ChartViewController: UIViewController {
         wasteUsageTotal.textColor = .white
         
         
-        // add voice over of total waste
+        // add voice over
         let wasteUsageText = String(textUsage)
         wasteUsage.text = wasteUsageText
         wasteUsage.accessibilityValue = wasteUsage.text

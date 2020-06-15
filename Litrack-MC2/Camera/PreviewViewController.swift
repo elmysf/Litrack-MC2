@@ -28,6 +28,7 @@ class PreviewViewController: UIViewController {
        name = "nodata"
    }
     
+    // add voice over
     override func viewDidAppear(_ animated: Bool) {
         let voiceOver = "You add" + name + ".\n" + "preview".localized
         speechService.speaking(voiceOver)

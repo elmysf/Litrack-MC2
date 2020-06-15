@@ -63,6 +63,7 @@ class OnboardingController: UIViewController {
 
 //  self.getStarted.adjustsImageSizeForAccessibilityContentSizeCategory = true
     
+    // add voice over
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         logoAnimationView.logoGifImageView.startAnimatingGif()
