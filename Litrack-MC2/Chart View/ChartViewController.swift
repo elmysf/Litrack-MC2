@@ -57,7 +57,6 @@ class ChartViewController: UIViewController {
         let canWaste = PieChartDataEntry(value: Double(can ))
         let glassWaste = PieChartDataEntry(value:  Double(glass ) )
         
-        
         // View
         setupNavigationBar()
         setBackgroundImage()
