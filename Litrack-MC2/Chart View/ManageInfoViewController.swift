@@ -49,6 +49,8 @@ class ManageInfoViewController: UIViewController {
     }
 
     @objc func backButton(_ sender: Any) {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
         dismiss(animated: true, completion: nil)
     }
 }

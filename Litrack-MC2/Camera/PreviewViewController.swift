@@ -38,12 +38,16 @@ class PreviewViewController: UIViewController {
    
    
    @IBAction func cancelButton(_ sender: Any) {
+       let generator = UINotificationFeedbackGenerator()
+       generator.notificationOccurred(.success)
        dismiss(animated: true, completion: nil)
    }
    @IBAction func saveButton(_ sender: Any) {
        guard let imageToSave = image else {
            return
        }
+       let generator = UINotificationFeedbackGenerator()
+           generator.notificationOccurred(.success)
        guard let newData = CoreDataManager.shared.createWaste(name: name, image: imageToSave) else { return }
        print("Created \(newData)")
        

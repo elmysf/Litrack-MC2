@@ -102,6 +102,7 @@
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
+                                            <action selector="getStarted:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CLf-9V-dqK"/>
                                             <segue destination="Oc9-Nu-4O6" kind="presentation" modalPresentationStyle="fullScreen" id="PD9-ej-WfM"/>
                                         </connections>
                                     </button>

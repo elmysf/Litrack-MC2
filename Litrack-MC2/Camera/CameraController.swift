@@ -175,6 +175,8 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
     
     
     @IBAction func LibraryBtn(_ sender: Any) {
+            let generator = UINotificationFeedbackGenerator()
+            generator.notificationOccurred(.success)
             let picker : UIImagePickerController = UIImagePickerController()
             picker.sourceType = UIImagePickerController.SourceType.photoLibrary
             picker.mediaTypes = UIImagePickerController.availableMediaTypes(for: .photoLibrary)!
@@ -184,6 +186,8 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
     }
     
     @IBAction func cameraButton(_ sender: Any) {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
         let settings = AVCapturePhotoSettings()
                self.photoOutput?.capturePhoto(with: settings, delegate: self)
         

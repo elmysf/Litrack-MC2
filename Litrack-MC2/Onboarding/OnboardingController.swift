@@ -64,6 +64,10 @@ class OnboardingController: UIViewController {
 
 //  self.getStarted.adjustsImageSizeForAccessibilityContentSizeCategory = true
     
+    @IBAction func getStarted(_ sender: Any) {
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)

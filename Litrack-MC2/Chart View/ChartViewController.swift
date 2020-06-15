@@ -257,6 +257,8 @@ class ChartViewController: UIViewController {
     }
 
     @objc func objectTapped(gesture: UIGestureRecognizer){
+        let generator = UINotificationFeedbackGenerator()
+        generator.notificationOccurred(.success)
         let controller = UIStoryboard(name: "Chart.Screen", bundle: nil).instantiateViewController(withIdentifier: "ManageViewController") as! ManageInfoViewController
         let navigationControl = UINavigationController(rootViewController: controller)
         navigationControl.modalPresentationStyle = .automatic
@@ -290,7 +292,8 @@ class ChartViewController: UIViewController {
     }
     
    @objc func back(){
-//        dismiss(animated: true, completion: nil)
+//    let generator1 = UINotificationFeedbackGenerator()
+//    generator1.notificationOccurred(.success)
     func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "Back to Camera" {
             let cameraScreen = segue.destination as! CameraController
