@@ -81,6 +81,13 @@ class ChartViewController: UIViewController {
         wasteUsageTotal.text = textUsage.description
         wasteUsageTotal.textColor = .white
         
+        wasteUsageLabel.text = "Total Waste"
+        wasteUsageLabel.textColor = .white
+               
+        wasteUsages = [plasticWaste, canWaste, glassWaste]
+               
+        UpdateChartData()
+        
         
         // add voice over
         let wasteUsageText = String(textUsage)
@@ -106,14 +113,6 @@ class ChartViewController: UIViewController {
         glassSay.accessibilityValue = glassSay.text
         speechService.speaking("\(glassVO) glass.")
         
-        
-        
-        wasteUsageLabel.text = "Total Waste"
-        wasteUsageLabel.textColor = .white
-        
-        wasteUsages = [plasticWaste, canWaste, glassWaste]
-        
-        UpdateChartData()
     }
     
     // MARK: Create Chart
