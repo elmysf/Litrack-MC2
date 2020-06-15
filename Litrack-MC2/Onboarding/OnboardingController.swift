@@ -24,7 +24,7 @@ class OnboardingController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        let welcome = "welcome to Litrack. The application that helps you control your waste usage. You can add your waste by using camera feature and then get data of how much waste you've been using daily. You can also get some tips on how to reduce and recycle it. To get start please push the green button on the bottom".localized
+        let welcome = "welcome to Litrack. The application that helps you control your waste usage. You can add your waste by using camera feature and then get data of how much waste you've been using daily. You can also get some tips on how to reduce and recycle it. To get started please push the green button on the bottom".localized
         speeceService.say(welcome)
         
         // setup welcome
