@@ -63,10 +63,13 @@ class OnboardingController: UIViewController {
 
 //  self.getStarted.adjustsImageSizeForAccessibilityContentSizeCategory = true
     
-    // add voice over
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
+        // add gif in lauchscreen
         logoAnimationView.logoGifImageView.startAnimatingGif()
+        
+        // add voice over
         let welcomeOnboarding = "welcome onboarding".localized
         speechService.speaking(welcomeOnboarding)
     }
