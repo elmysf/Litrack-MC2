@@ -19,9 +19,14 @@ class OnboardingController: UIViewController {
     @IBOutlet weak var image3: UIImageView!
     @IBOutlet weak var label3: UILabel!
     
+    let speeceService = SpeechService()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
        
+        let welcome = "welcome to Litrack. The application that helps you control your waste usage. You can add your waste by using camera feature and then get data of how much waste you've been using daily. You can also get some tips on how to reduce and recycle it. To get start please push the green button on the bottom".localized
+        speeceService.say(welcome)
+        
         // setup welcome
         self.welcome.text = "Welcome!"
         self.welcome.font = UIFont.boldSystemFont(ofSize: 60)
