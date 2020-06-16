@@ -71,7 +71,7 @@ class OnboardingController: UIViewController {
         let storyboard = UIStoryboard(name: "Camera.Screen", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "main") as! CameraController
 //        UIApplication.shared.keyWindow?.rootViewController = vc
-//        vc.modalPresentationStyle = .fullScreen
+        vc.modalPresentationStyle = .fullScreen
         
         self.present(vc, animated: true, completion: nil)
 //        self.present(vc, animated: true, completion: { () -> Void in
