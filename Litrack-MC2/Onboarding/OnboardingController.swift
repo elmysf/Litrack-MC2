@@ -70,9 +70,12 @@ class OnboardingController: UIViewController {
         UserDefaults.standard.set(true, forKey: "hasLaunched")
         let storyboard = UIStoryboard(name: "Camera.Screen", bundle: nil)
         let vc = storyboard.instantiateViewController(withIdentifier: "main") as! CameraController
+        UIApplication.shared.keyWindow?.rootViewController = vc
         vc.modalPresentationStyle = .fullScreen
         
-        present(vc, animated: true, completion: nil)
+        self.present(vc, animated: true, completion: { () -> Void in
+            self.dismiss(animated: false, completion: nil)
+        })
     }
     
     override func viewDidAppear(_ animated: Bool) {
