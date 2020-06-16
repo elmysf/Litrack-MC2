@@ -67,6 +67,12 @@ class OnboardingController: UIViewController {
     @IBAction func getStarted(_ sender: Any) {
         let generator = UINotificationFeedbackGenerator()
         generator.notificationOccurred(.success)
+        UserDefaults.standard.set(true, forKey: "hasLaunched")
+        let storyboard = UIStoryboard(name: "Camera.Screen", bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: "main") as UIViewController
+        vc.modalPresentationStyle = .fullScreen
+        
+        present(vc, animated: true, completion: nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {
