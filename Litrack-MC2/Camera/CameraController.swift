@@ -33,36 +33,38 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
          var zoomOutGestureRecognizer = UISwipeGestureRecognizer()
          var flashMode = AVCaptureDevice.FlashMode.off
       
-          override func viewDidLoad() {
-                 super.viewDidLoad()
-                 setupCaptureSession()
-                 setupDevice()
-                 setupInputOutput()
-                 setupPreviewLayer()
-                 captureSession.startRunning()
-                 
-                 toggleCameraGestureRecognizer.direction = .up
-                 toggleCameraGestureRecognizer.addTarget(self, action: #selector(self.switchCamera))
-                 view.addGestureRecognizer(toggleCameraGestureRecognizer)
-                 
-                 // Zoom In recognizer
-                 zoomInGestureRecognizer.direction = .right
-                 zoomInGestureRecognizer.addTarget(self, action: #selector(zoomIn))
-                 view.addGestureRecognizer(zoomInGestureRecognizer)
-                 
-                 // Zoom Out recognizer
-                 zoomOutGestureRecognizer.direction = .left
-                 zoomOutGestureRecognizer.addTarget(self, action: #selector(zoomOut))
-                 view.addGestureRecognizer(zoomOutGestureRecognizer)
-                 styleCaptureButton()
-            
-                 accessibilityActivate()
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        styleCaptureButton()
              }
              
     // add voice over
     override func viewDidAppear(_ animated: Bool) {
         let cameraVoiceOver = "Add your waste".localized
         speechService.speaking(cameraVoiceOver)
+        
+        setupCaptureSession()
+        setupDevice()
+        setupInputOutput()
+        setupPreviewLayer()
+        captureSession.startRunning()
+             
+        toggleCameraGestureRecognizer.direction = .up
+        toggleCameraGestureRecognizer.addTarget(self, action: #selector(self.switchCamera))
+        view.addGestureRecognizer(toggleCameraGestureRecognizer)
+             
+        // Zoom In recognizer
+        zoomInGestureRecognizer.direction = .right
+        zoomInGestureRecognizer.addTarget(self, action: #selector(zoomIn))
+        view.addGestureRecognizer(zoomInGestureRecognizer)
+             
+        // Zoom Out recognizer
+        zoomOutGestureRecognizer.direction = .left
+        zoomOutGestureRecognizer.addTarget(self, action: #selector(zoomOut))
+        view.addGestureRecognizer(zoomOutGestureRecognizer)
+        
+        
+        accessibilityActivate()
     }
              
              func styleCaptureButton() {
