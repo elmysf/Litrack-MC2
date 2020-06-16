@@ -69,7 +69,7 @@ class OnboardingController: UIViewController {
         generator.notificationOccurred(.success)
         UserDefaults.standard.set(true, forKey: "hasLaunched")
         let storyboard = UIStoryboard(name: "Camera.Screen", bundle: nil)
-        let vc = storyboard.instantiateViewController(withIdentifier: "main") as UIViewController
+        let vc = storyboard.instantiateViewController(withIdentifier: "main") as! CameraController
         vc.modalPresentationStyle = .fullScreen
         
         present(vc, animated: true, completion: nil)
