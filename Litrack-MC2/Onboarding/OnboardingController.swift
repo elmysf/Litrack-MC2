@@ -21,7 +21,7 @@ class OnboardingController: UIViewController {
 //     @IBOutlet weak var image3: UIImageView!
 //     @IBOutlet weak var label3: UILabel!
     
-    let speechService = SpeechService()
+//    let speechService = SpeechService()
     
      override func viewDidLoad() {
          super.viewDidLoad()
@@ -85,8 +85,8 @@ class OnboardingController: UIViewController {
         logoAnimationView.logoGifImageView.startAnimatingGif()
         
         // add voice over
-        let welcomeOnboarding = "welcome onboarding".localized
-        speechService.speaking(welcomeOnboarding)
+//        let welcomeOnboarding = "welcome onboarding".localized
+//        speechService.speaking(welcomeOnboarding)
     }
 }
 extension OnboardingController: SwiftyGifDelegate {

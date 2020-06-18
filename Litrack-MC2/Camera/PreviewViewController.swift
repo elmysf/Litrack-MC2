@@ -17,7 +17,7 @@ class PreviewViewController: UIViewController {
    var image:UIImage!
    var name:String!
    
-    let speechService = SpeechService()
+//    let speechService = SpeechService()
     
    override func viewDidLoad() {
        super.viewDidLoad()
@@ -31,10 +31,10 @@ class PreviewViewController: UIViewController {
    }
     
     // add voice over
-    override func viewDidAppear(_ animated: Bool) {
-        let voiceOver = "You add" + name + ".\n" + "preview".localized
-        speechService.speaking(voiceOver)
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        let voiceOver = "You add" + name + ".\n" + "preview".localized
+//        speechService.speaking(voiceOver)
+//    }
    
    
    @IBAction func cancelButton(_ sender: Any) {
