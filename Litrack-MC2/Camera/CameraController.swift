@@ -40,8 +40,7 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
              
     // add voice over
     override func viewDidAppear(_ animated: Bool) {
-        let cameraVoiceOver = "Add your waste".localized
-        speechService.speaking(cameraVoiceOver)
+        
         
         setupCaptureSession()
         setupDevice()
@@ -63,7 +62,8 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
         zoomOutGestureRecognizer.addTarget(self, action: #selector(zoomOut))
         view.addGestureRecognizer(zoomOutGestureRecognizer)
         
-        
+        let cameraVoiceOver = "Add your waste".localized
+        speechService.speaking(cameraVoiceOver)
         accessibilityActivate()
     }
              
