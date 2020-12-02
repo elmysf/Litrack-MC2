@@ -14,8 +14,7 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
         @IBOutlet weak var cameraButton: UIButton!
         @IBOutlet weak var LibraryBtn: UIButton!
     
-        let speechService = SpeechService()
-    
+         let speechService = SpeechService()
          var captureSession = AVCaptureSession()
          var backCamera: AVCaptureDevice?
          var frontCamera: AVCaptureDevice?
@@ -186,7 +185,7 @@ class CameraController: UIViewController, UIImagePickerControllerDelegate & UINa
             picker.allowsEditing = false
             self.present(picker, animated: true, completion: nil)
     }
-    
+        
     @IBAction func cameraButton(_ sender: Any) {
         let generator = UINotificationFeedbackGenerator()
         generator.notificationOccurred(.success)

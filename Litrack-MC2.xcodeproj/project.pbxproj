@@ -206,18 +206,19 @@
 		CBE7A08F24744FD300868A22 /* Litrack-MC2 */ = {
 			isa = PBXGroup;
 			children = (
+				CBE7A09024744FD300868A22 /* AppDelegate.swift */,
+				CBE7A09224744FD300868A22 /* SceneDelegate.swift */,
+				CBB7EAED249484A5004D6F36 /* SpeechService.swift */,
+				F08277EF248222D0006FA997 /* WasteClassifier.mlmodel */,
 				CB4E2EFE2481672B007207C1 /* Chart View */,
 				CB4E2EFD2481671A007207C1 /* Onboarding */,
 				F05C5A8224815D550069CB97 /* Camera */,
-				CBE7A09024744FD300868A22 /* AppDelegate.swift */,
-				CBB7EAED249484A5004D6F36 /* SpeechService.swift */,
-				CBE7A09224744FD300868A22 /* SceneDelegate.swift */,
+				CB2BE6D6249B33EB008D9E48 /* Localizable.String */,
 				F042793F2482A2E600CA355D /* littrack.gif */,
 				F04279492482BC5E00CA355D /* LaunchScreen.storyboard */,
 				CBE7A09C24744FD500868A22 /* Assets.xcassets */,
 				CBE7A0A124744FD500868A22 /* Info.plist */,
 				CBE7A09924744FD300868A22 /* Litrack_MC2.xcdatamodeld */,
-				CB2BE6D6249B33EB008D9E48 /* Localizable.String */,
 			);
 			path = "Litrack-MC2";
 			sourceTree = "<group>";
@@ -246,7 +247,6 @@
 				F0DAFA382484E6DF00E1184C /* CoreDataManager.swift */,
 				F05C5A8324815D550069CB97 /* CameraController.swift */,
 				F05C5A8424815D550069CB97 /* PreviewViewController.swift */,
-				F08277EF248222D0006FA997 /* WasteClassifier.mlmodel */,
 				F05C5A8624815D550069CB97 /* Camera.Screen.storyboard */,
 			);
 			path = Camera;
@@ -633,7 +633,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -688,7 +688,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -704,17 +704,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XV6Q4LNRD5;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 9T6A37YY89;
 				INFOPLIST_FILE = "Litrack-MC2/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "www.infinitelearning.id.Litrack-MC2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -724,17 +726,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XV6Q4LNRD5;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_TEAM = 9T6A37YY89;
 				INFOPLIST_FILE = "Litrack-MC2/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.7;
 				PRODUCT_BUNDLE_IDENTIFIER = "www.infinitelearning.id.Litrack-MC2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

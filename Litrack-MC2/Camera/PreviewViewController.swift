@@ -30,18 +30,6 @@ class PreviewViewController: UIViewController {
         accessibilityActivate()
    }
     
-    // add voice over
-//    override func viewDidAppear(_ animated: Bool) {
-//        let voiceOver = "You add" + name + ".\n" + "preview".localized
-//        speechService.speaking(voiceOver)
-//    }
-   
-   
-   @IBAction func cancelButton(_ sender: Any) {
-       let generator = UINotificationFeedbackGenerator()
-       generator.notificationOccurred(.success)
-       dismiss(animated: true, completion: nil)
-   }
    @IBAction func saveButton(_ sender: Any) {
        guard let imageToSave = image else {
            return
@@ -128,4 +116,15 @@ extension UIView {
    func hideLoadingView () {
        loadingView.removeFromSuperview()
    }
+    
+    @objc func back(){
+ //    let generator1 = UINotificationFeedbackGenerator()
+ //    generator1.notificationOccurred(.success)
+     func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         if segue.identifier == "Back to Camera" {
+             let cameraScreen = segue.destination as! CameraController
+             cameraScreen.navigationItem.leftItemsSupplementBackButton = false
+             }
+         }
+     }
 }

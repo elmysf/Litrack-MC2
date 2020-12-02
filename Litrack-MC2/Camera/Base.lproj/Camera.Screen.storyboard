@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -34,7 +36,7 @@
                                             <action selector="LibraryBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="udD-oN-8oG"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqa-V2-v6c">
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqa-V2-v6c">
                                         <rect key="frame" x="122" y="0.0" width="80" height="80"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -61,6 +63,7 @@
                                 </subviews>
                             </stackView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Dwj-Zd-5OO" secondAttribute="bottom" constant="816" id="1zD-yj-u69"/>
@@ -75,7 +78,6 @@
                             <constraint firstAttribute="bottom" secondItem="WLi-HS-Gwv" secondAttribute="bottom" constant="60" id="v3b-hr-ZdW" userLabel="bottom = Stack View.bottom + 120"/>
                             <constraint firstItem="PDH-7R-qJP" firstAttribute="trailing" secondItem="Dwj-Zd-5OO" secondAttribute="trailing" id="wJo-VD-6Wr"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="LibraryBtn" destination="zHM-Ot-IlP" id="iFI-W6-8Cb"/>
@@ -114,21 +116,8 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="Oug-LZ-LWT">
                                         <rect key="frame" x="18" y="8" width="378" height="30"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tue-mu-RXE">
-                                                <rect key="frame" x="0.0" y="0.0" width="178" height="30"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="30" id="F5V-dw-WQF"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
-                                                <state key="normal" title="Retake">
-                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="cancelButton:" destination="Q4O-ni-gRA" eventType="touchUpInside" id="cV7-Q1-oQK"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAq-P7-zYz">
-                                                <rect key="frame" x="278" y="0.0" width="100" height="30"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAq-P7-zYz">
+                                                <rect key="frame" x="0.0" y="0.0" width="378" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="30" id="c2R-rR-obk"/>
                                                 </constraints>
@@ -159,7 +148,8 @@
                                 </constraints>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Od7-RK-7lK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="hfJ-LK-cPH" firstAttribute="leading" secondItem="Od7-RK-7lK" secondAttribute="leading" id="3hE-kT-qPn"/>
                             <constraint firstItem="tlU-qo-eCL" firstAttribute="leading" secondItem="hfJ-LK-cPH" secondAttribute="leading" id="7wY-mF-zC4"/>
@@ -172,7 +162,6 @@
                             <constraint firstAttribute="bottom" secondItem="tlU-qo-eCL" secondAttribute="bottom" id="pz4-gf-B5k"/>
                             <constraint firstAttribute="bottom" secondItem="hfJ-LK-cPH" secondAttribute="bottom" id="tmc-Tw-bme"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Od7-RK-7lK"/>
                     </view>
                     <connections>
                         <outlet property="ResultPhoto" destination="BLt-DX-h0R" id="4f3-gP-dXz"/>
@@ -195,5 +184,8 @@
     <resources>
         <image name="Camera" width="47" height="36"/>
         <image name="Manage" width="45" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
